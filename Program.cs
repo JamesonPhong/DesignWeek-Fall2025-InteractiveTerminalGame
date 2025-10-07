@@ -1,9 +1,9 @@
 ﻿using System.Drawing;
 
 Console.CursorVisible = false;
-
 Random begin = new Random();
 
+//skill check variables
 int skillcheckSize = 5;
 int barLength = 50;
 int skillcheckBegin = begin.Next(10, 40);
@@ -43,8 +43,8 @@ for (int position = 0; position < barLength; position++)
 
 
 
-    // makes the spacebar(any key) hit the skill check  
-    if (Console.KeyAvailable)
+    // makes the (any key) hit the skill check  
+    if (Console.KeyAvailable) 
     {
         
         if (position >= skillcheckBegin && position <= skillcheckEnd)
@@ -57,6 +57,6 @@ for (int position = 0; position < barLength; position++)
         }
         return;
     }
-    Thread.Sleep(speed);
+    Thread.Sleep(speed); //sets cursor speed
 
 }
