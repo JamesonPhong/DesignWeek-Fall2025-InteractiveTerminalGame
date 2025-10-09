@@ -46,16 +46,23 @@ for (int position = 0; position < barLength; position++)
     // makes the (any key) hit the skill check  
     if (Console.KeyAvailable) 
     {
+        var key = Console.ReadKey(true).Key;
+        if (key == ConsoleKey.Spacebar) 
+        {
+
+            if (position >= skillcheckBegin && position <= skillcheckEnd)
+            {
+
+                Console.WriteLine("You Dodged succesfully!");
+            }
+            else
+            {
+                Console.WriteLine("You got hit!");
+            }
+            return;
+        }
+
         
-        if (position >= skillcheckBegin && position <= skillcheckEnd)
-        {
-            Console.WriteLine("You Dodged succesfully!");
-        }
-        else
-        {
-            Console.WriteLine("You got hit!");
-        }
-        return;
     }
     Thread.Sleep(speed); //sets cursor speed
 
