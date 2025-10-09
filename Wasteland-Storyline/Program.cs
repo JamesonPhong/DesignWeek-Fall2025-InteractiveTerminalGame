@@ -92,8 +92,8 @@ while (choice == true)
     Console.WriteLine("");
     Console.WriteLine("Enter in the Corresponding Number to continue...");
     Console.WriteLine("");
-    Console.WriteLine("[1] Dodge Left");
-    Console.WriteLine("[2] Dodge Right");
+    Console.WriteLine("[1] Dodge Left to give Morrison a clearer shot");
+    Console.WriteLine("[2] Dodge Right to give Worsley an advantage");
     int choiceOne = int.Parse(Console.ReadLine());
     if (choiceOne == 1)
     {
@@ -413,8 +413,8 @@ while (choice == true)
     Console.WriteLine("");
     Console.WriteLine("Enter in the Corresponding Number to continue...");
     Console.WriteLine("");
-    Console.WriteLine("[1] Ram them");
-    Console.WriteLine("[2] Stop the car");
+    Console.WriteLine("[1] Ram them off the Cliffside");
+    Console.WriteLine("[2] Stop the car and fight them");
     int choiceThree = int.Parse(Console.ReadLine());
     if (choiceThree == 1)
     {
