@@ -1,4 +1,13 @@
-﻿// Introduction to the Wasteland Storyline
+﻿
+
+
+
+
+
+
+
+
+// Introduction to the Wasteland Storyline
 Console.WriteLine("You suddenly find yourself inside some sort of buggy-like vehicle chasing after another buggy-like vehicle " +
                   "at high speeds. The unbearable heat of the sun beats down upon you, feeling hotter than it usually does. " +
                   "Had it not been for the bandana wrapped tightly around your face and goggles protecting your eyes, the " +
@@ -664,3 +673,11 @@ else if (choiceThreeB == true)
                           "corner, you thought you heard somebody whisper your name… Was that your voice?");
     }
 }
+
+
+
+
+
+
+
+
