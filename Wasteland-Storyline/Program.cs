@@ -76,6 +76,12 @@ Console.WriteLine("Bandit Morrison: “Shit! Dodge V! Dodge!”");
 bool choice = true;
 bool choiceOneA = false;
 bool choiceOneB = false;
+bool choiceTwoA = false;
+bool choiceTwoB = false;
+bool choiceThreeA = false;
+bool choiceThreeB = false;
+bool worsleyDead = false;
+bool morrisonDead = false;
 while (choice == true)
 {
     Console.WriteLine("");
@@ -130,8 +136,6 @@ if (choiceOneA == true)
 
     // This is the Second Decision in Choice 1A the Player can make
     choice = true;
-    bool choiceTwoA = false;
-    bool choiceTwoB = false;
     while (choice == true)
     {
         Console.WriteLine("");
@@ -186,8 +190,6 @@ else if (choiceOneB == true)
 
     // This is the Second Decision in Choice 1B the Player can make
     choice = true;
-    bool choiceTwoA = false;
-    bool choiceTwoB = false;
     while (choice == true)
     {
         Console.WriteLine("");
@@ -207,4 +209,210 @@ else if (choiceOneB == true)
             choice = false;
         }
     }
+}
+
+// This is the dialouge for Choice 2A in Choice 1A
+if (choiceOneA == true && choiceTwoA == true)
+{
+    Console.WriteLine("");
+    Console.WriteLine("Steering the buggy into the cave, you turn the headlights on. Immediately, you hear the sound of " +
+                      "skittering echoing faintly in the walls. As you navigate through the cave the skittering gets louder " +
+                      "until finally you are faced with scorpion-like bugs.");
+
+    pauseDialouge = true;
+    while (pauseDialouge == true)
+    {
+        Console.WriteLine("");
+        Console.WriteLine("Enter in the letter \"C\" To Continue...");
+        string contDialouge = Console.ReadLine();
+        if (contDialouge.ToLower() == "c")
+        {
+            pauseDialouge = false;
+        }
+    }
+
+    Console.WriteLine("");
+    Console.WriteLine("Bandit Morrison: “I knew this would happen… Get ready boys! Looks like we’re in for one helluva fight!”");
+
+    pauseDialouge = true;
+    while (pauseDialouge == true)
+    {
+        Console.WriteLine("");
+        Console.WriteLine("Enter in the letter \"C\" To Continue...");
+        string contDialouge = Console.ReadLine();
+        if (contDialouge.ToLower() == "c")
+        {
+            pauseDialouge = false;
+        }
+    }
+
+    Console.WriteLine("");
+    Console.WriteLine("Vernon (You): “The path is clear, everybody in!”");
+
+    pauseDialouge = true;
+    while (pauseDialouge == true)
+    {
+        Console.WriteLine("");
+        Console.WriteLine("Enter in the letter \"C\" To Continue...");
+        string contDialouge = Console.ReadLine();
+        if (contDialouge.ToLower() == "c")
+        {
+            pauseDialouge = false;
+        }
+    }
+
+    Console.WriteLine("");
+    Console.WriteLine("The buggy shakes hard from behind and you hear a visceral scream behind you. As you turn you watch in " +
+                      "horror as Worsley is grabbed by a bug hidden in the shadows. Bugs swarm Worsley, ripping him apart " +
+                      "limb from limb. His pained cries echo in the Cave as the Bugs greedily feast on him. They all take " +
+                      "chunks out of him, blood painting the walls as his half-chewed organs wetly squelches on the ground. " +
+                      "All you can hear is dripping blood. You quickly make your way through the bloodied corpses of the bugs " +
+                      "and see a light ahead indicating the end of the Cave. As you clear the cave, you see the fleeing " +
+                      "vehicle just ahead resting at a cliffside. They seemed to have run out of fuel.");
+    
+    worsleyDead = true;
+    pauseDialouge = true;
+    while (pauseDialouge == true)
+    {
+        Console.WriteLine("");
+        Console.WriteLine("Enter in the letter \"C\" To Continue...");
+        string contDialouge = Console.ReadLine();
+        if (contDialouge.ToLower() == "c")
+        {
+            pauseDialouge = false;
+        }
+    }
+
+    Console.WriteLine("");
+    Console.WriteLine("Bandit Morrison: “Ohohoho! There they are! Time to end this!”");
+}
+// This is the dialouge for Choice 2A in Choice 1B
+else if (choiceOneB == true && choiceTwoA == true)
+{
+    Console.WriteLine("");
+    Console.WriteLine("Steering the buggy up the Mountain, you carefully follow the pathways. Immediately you hear screeching " +
+                      "echoing in the distance. As you navigate the road you notice a dust cloud far below the mountain, but " +
+                      "then you hear the screeching become louder. Up ahead you see tiny dots in the sky. The Vultures are " +
+                      "rapidly approaching.");
+
+    pauseDialouge = true;
+    while (pauseDialouge == true)
+    {
+        Console.WriteLine("");
+        Console.WriteLine("Enter in the letter \"C\" To Continue...");
+        string contDialouge = Console.ReadLine();
+        if (contDialouge.ToLower() == "c")
+        {
+            pauseDialouge = false;
+        }
+    }
+
+    Console.WriteLine("");
+    Console.WriteLine("Bandit Worsley: “Good news, we found the scrapheads. Bad news, the Vultures found us too!”");
+
+    pauseDialouge = true;
+    while (pauseDialouge == true)
+    {
+        Console.WriteLine("");
+        Console.WriteLine("Enter in the letter \"C\" To Continue...");
+        string contDialouge = Console.ReadLine();
+        if (contDialouge.ToLower() == "c")
+        {
+            pauseDialouge = false;
+        }
+    }
+
+    Console.WriteLine("");
+    Console.WriteLine("Vernon (You): “I see the way down, come on!”");
+
+    pauseDialouge = true;
+    while (pauseDialouge == true)
+    {
+        Console.WriteLine("");
+        Console.WriteLine("Enter in the letter \"C\" To Continue...");
+        string contDialouge = Console.ReadLine();
+        if (contDialouge.ToLower() == "c")
+        {
+            pauseDialouge = false;
+        }
+    }
+
+    Console.WriteLine("");
+    Console.WriteLine("A loud crash shakes the buggy and you hear a guttural cry to your right. You turn your head just in " +
+                      "time to see a Vulture carrying Morrison away up into the air. He screams in terror as he’s tossed " +
+                      "between the Vultures. They all take turns tearing him apart, blood raining from the sky as his maimed " +
+                      "body splatters on the ground. A grotesque thud is heard. You book it down the Mountain, the downward " +
+                      "slope adding extra speed to the buggy’s descent. As you reach the base of the Mountain, you see the " +
+                      "fleeing vehicle just ahead resting at a cliffside. They seemed to have run out of fuel.");
+
+    morrisonDead = true;
+    pauseDialouge = true;
+    while (pauseDialouge == true)
+    {
+        Console.WriteLine("");
+        Console.WriteLine("Enter in the letter \"C\" To Continue...");
+        string contDialouge = Console.ReadLine();
+        if (contDialouge.ToLower() == "c")
+        {
+            pauseDialouge = false;
+        }
+    }
+
+    Console.WriteLine("");
+    Console.WriteLine("Bandit Worsley: “Bastards are done now! Let’s finish ‘em off!”");
+}
+// This is the dialouge for Choice 2B in Choice 1A or Choice 1B
+else if (choiceOneA == true || choiceOneB == true && choiceTwoB == true)
+{
+    Console.WriteLine("");
+    Console.WriteLine("Going straight into the Valley you eventually find the fleeing vehicle just up ahead, the cracks in " +
+                      "the shield slowly repairing itself. Morrison and Worsley rain hellfire once again upon the fleeing " +
+                      "vehicle.");
+
+    pauseDialouge = true;
+    while (pauseDialouge == true)
+    {
+        Console.WriteLine("");
+        Console.WriteLine("Enter in the letter \"C\" To Continue...");
+        string contDialouge = Console.ReadLine();
+        if (contDialouge.ToLower() == "c")
+        {
+            pauseDialouge = false;
+        }
+    }
+
+    Console.WriteLine("");
+    Console.WriteLine("Bandit Morrison: “We ain’t gonna get nowhere like this! Oi V, you can multi-task can’t you? Get your " +
+                      "gun out and help us break that damn shield, oh and try not to crash us!”");
+
+    pauseDialouge = true;
+    while (pauseDialouge == true)
+    {
+        Console.WriteLine("");
+        Console.WriteLine("Enter in the letter \"C\" To Continue...");
+        string contDialouge = Console.ReadLine();
+        if (contDialouge.ToLower() == "c")
+        {
+            pauseDialouge = false;
+        }
+    }
+
+    Console.WriteLine("");
+    Console.WriteLine("You managed to nail a hit on the fleeing vehicle’s fuel line causing them to lose fuel and leading to " +
+                      "them slowing down significantly until they eventually are forced to stop at a cliffside.");
+
+    pauseDialouge = true;
+    while (pauseDialouge == true)
+    {
+        Console.WriteLine("");
+        Console.WriteLine("Enter in the letter \"C\" To Continue...");
+        string contDialouge = Console.ReadLine();
+        if (contDialouge.ToLower() == "c")
+        {
+            pauseDialouge = false;
+        }
+    }
+
+    Console.WriteLine("");
+    Console.WriteLine("Bandit Morrison: “Hah! They’ve got nowhere to run to now! Time to end this!”");
 }
