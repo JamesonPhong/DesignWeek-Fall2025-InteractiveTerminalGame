@@ -94,17 +94,17 @@ bool morrisonDead = false;
 while (choice == true)
 {
     Console.WriteLine("");
-    Console.WriteLine("Enter in the Corresponding Letter to continue...");
+    Console.WriteLine("Enter in the Corresponding Number to continue...");
     Console.WriteLine("");
-    Console.WriteLine("[A] Dodge Left");
-    Console.WriteLine("[B] Dodge Right");
-    string choiceOne = Console.ReadLine();
-    if (choiceOne.ToLower() == "a")
+    Console.WriteLine("[1] Dodge Left");
+    Console.WriteLine("[2] Dodge Right");
+    int choiceOne = int.Parse(Console.ReadLine());
+    if (choiceOne == 1)
     {
         choiceOneA = true;
         choice = false;
     }
-    else if (choiceOne.ToLower() == "b")
+    else if (choiceOne == 2)
     {
         choiceOneB = true;
         choice = false;
@@ -147,17 +147,17 @@ if (choiceOneA == true)
     while (choice == true)
     {
         Console.WriteLine("");
-        Console.WriteLine("Enter in the Corresponding Letter to continue...");
+        Console.WriteLine("Enter in the Corresponding Number to continue...");
         Console.WriteLine("");
-        Console.WriteLine("[A] Go down into the Caves");
-        Console.WriteLine("[B] Go through the Valley");
-        string choiceTwo = Console.ReadLine();
-        if (choiceTwo.ToLower() == "a")
+        Console.WriteLine("[1] Go down into the Caves");
+        Console.WriteLine("[2] Go through the Valley");
+        int choiceTwo = int.Parse(Console.ReadLine());
+        if (choiceTwo == 1)
         {
             choiceTwoA = true;
             choice = false;
         }
-        else if (choiceTwo.ToLower() == "b")
+        else if (choiceTwo == 2)
         {
             choiceTwoB = true;
             choice = false;
@@ -201,17 +201,17 @@ else if (choiceOneB == true)
     while (choice == true)
     {
         Console.WriteLine("");
-        Console.WriteLine("Enter in the Corresponding Letter to continue...");
+        Console.WriteLine("Enter in the Corresponding Number to continue...");
         Console.WriteLine("");
-        Console.WriteLine("[A] Go up the Mountain");
-        Console.WriteLine("[B] Go through the Valley");
-        string choiceTwo = Console.ReadLine();
-        if (choiceTwo.ToLower() == "a")
+        Console.WriteLine("[1] Go up the Mountain");
+        Console.WriteLine("[2] Go through the Valley");
+        int choiceTwo = int.Parse(Console.ReadLine());
+        if (choiceTwo == 1)
         {
             choiceTwoA = true;
             choice = false;
         }
-        else if (choiceTwo.ToLower() == "b")
+        else if (choiceTwo == 2)
         {
             choiceTwoB = true;
             choice = false;
@@ -428,17 +428,17 @@ choice = true;
 while (choice == true)
 {
     Console.WriteLine("");
-    Console.WriteLine("Enter in the Corresponding Letter to continue...");
+    Console.WriteLine("Enter in the Corresponding Number to continue...");
     Console.WriteLine("");
-    Console.WriteLine("[A] Ram them");
-    Console.WriteLine("[B] Stop the car");
-    string choiceThree = Console.ReadLine();
-    if (choiceThree.ToLower() == "a")
+    Console.WriteLine("[1] Ram them");
+    Console.WriteLine("[2] Stop the car");
+    int choiceThree = int.Parse(Console.ReadLine());
+    if (choiceThree == 1)
     {
         choiceThreeA = true;
         choice = false;
     }
-    else if (choiceThree.ToLower() == "b")
+    else if (choiceThree == 2)
     {
         choiceThreeB = true;
         choice = false;
