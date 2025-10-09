@@ -101,7 +101,6 @@ while (choice == true)
         choice = false;
     }
 }
-
 // This is the dialouge for Choice 1A
 if (choiceOneA == true)
 {
@@ -210,7 +209,6 @@ else if (choiceOneB == true)
         }
     }
 }
-
 // This is the dialouge for Choice 2A in Choice 1A
 if (choiceOneA == true && choiceTwoA == true)
 {
@@ -415,4 +413,230 @@ else if (choiceOneA == true || choiceOneB == true && choiceTwoB == true)
 
     Console.WriteLine("");
     Console.WriteLine("Bandit Morrison: “Hah! They’ve got nowhere to run to now! Time to end this!”");
+}
+// This is the Third and Final Decision the Player can make
+choice = true;
+while (choice == true)
+{
+    Console.WriteLine("");
+    Console.WriteLine("Enter in the Corresponding Letter to continue...");
+    Console.WriteLine("");
+    Console.WriteLine("[A] Ram them");
+    Console.WriteLine("[B] Stop the car");
+    string choiceThree = Console.ReadLine();
+    if (choiceThree.ToLower() == "a")
+    {
+        choiceThreeA = true;
+        choice = false;
+    }
+    else if (choiceThree.ToLower() == "b")
+    {
+        choiceThreeB = true;
+        choice = false;
+    }
+}
+// This is the dialouge for Choice 3A
+if (choiceThreeA == true)
+{
+    Console.WriteLine("");
+    Console.WriteLine("You ram the car sending both you and the fleeing bandits straight off the cliffside.");
+}
+// This is the dialouge for Choice 3B
+else if (choiceThreeB == true)
+{
+    // Checks if Morrison is dead from Choice 2A in Choice 1B
+    if (morrisonDead == true)
+    {
+        Console.WriteLine("");
+        Console.WriteLine("After defeating the bandits, Worsley begins to re-loot the supplies they stole before.");
+
+        pauseDialouge = true;
+        while (pauseDialouge == true)
+        {
+            Console.WriteLine("");
+            Console.WriteLine("Enter in the letter \"C\" To Continue...");
+            string contDialouge = Console.ReadLine();
+            if (contDialouge.ToLower() == "c")
+            {
+                pauseDialouge = false;
+            }
+        }
+
+        Console.WriteLine("");
+        Console.WriteLine("Bandit Worsley: “What’s this? When did we loot this?”");
+
+        pauseDialouge = true;
+        while (pauseDialouge == true)
+        {
+            Console.WriteLine("");
+            Console.WriteLine("Enter in the letter \"C\" To Continue...");
+            string contDialouge = Console.ReadLine();
+            if (contDialouge.ToLower() == "c")
+            {
+                pauseDialouge = false;
+            }
+        }
+
+        Console.WriteLine("");
+        Console.WriteLine("Worsley opens up the half-open trunk revealing the specimen. Your eyes widen in recognition and " +
+                          "you rush over.");
+    }
+    // If Morrison is still alive or Worsley is dead from Choice 2A in Choice 1A
+    else
+    {
+        Console.WriteLine("");
+        Console.WriteLine("After defeating the bandits, Morrison begins to re-loot the supplies they stole before.");
+
+        pauseDialouge = true;
+        while (pauseDialouge == true)
+        {
+            Console.WriteLine("");
+            Console.WriteLine("Enter in the letter \"C\" To Continue...");
+            string contDialouge = Console.ReadLine();
+            if (contDialouge.ToLower() == "c")
+            {
+                pauseDialouge = false;
+            }
+        }
+
+        Console.WriteLine("");
+        Console.WriteLine("Bandit Morrison: “Huh? I don’t remember looting this.”");
+
+        pauseDialouge = true;
+        while (pauseDialouge == true)
+        {
+            Console.WriteLine("");
+            Console.WriteLine("Enter in the letter \"C\" To Continue...");
+            string contDialouge = Console.ReadLine();
+            if (contDialouge.ToLower() == "c")
+            {
+                pauseDialouge = false;
+            }
+        }
+
+        Console.WriteLine("");
+        Console.WriteLine("Morrison opens up the half-open trunk revealing the specimen. Your eyes widen in recognition and " +
+                          "you rush over.");
+    }
+    pauseDialouge = true;
+    while (pauseDialouge == true)
+    {
+        Console.WriteLine("");
+        Console.WriteLine("Enter in the letter \"C\" To Continue...");
+        string contDialouge = Console.ReadLine();
+        if (contDialouge.ToLower() == "c")
+        {
+            pauseDialouge = false;
+        }
+    }
+
+    Console.WriteLine("");
+    Console.WriteLine("Vernon (You): “What have you done, where are we!?”");
+
+    pauseDialouge = true;
+    while (pauseDialouge == true)
+    {
+        Console.WriteLine("");
+        Console.WriteLine("Enter in the letter \"C\" To Continue...");
+        string contDialouge = Console.ReadLine();
+        if (contDialouge.ToLower() == "c")
+        {
+            pauseDialouge = false;
+        }
+    }
+
+    if (morrisonDead == true)
+    {
+        Console.WriteLine("");
+        Console.WriteLine("The specimen screeches causing you and Worsley to hold your heads in pain. The eerie purple glow " +
+                          "from before appears around the specimen again as it floats up several feet in the air. Particles " +
+                          "begin eating away at your surroundings like before until you once again find yourself being pulled " +
+                          "into the vortex.");
+    }
+    else if (worsleyDead == true)
+    {
+        Console.WriteLine("");
+        Console.WriteLine("The specimen screeches causing you and Morrison to hold your heads in pain. The eerie purple glow " +
+                          "from before appears around the specimen again as it floats up several feet in the air. Particles " +
+                          "begin eating away at your surroundings like before until you once again find yourself being pulled " +
+                          "into the vortex.");
+    }
+    else
+    {
+        Console.WriteLine("");
+        Console.WriteLine("The specimen screeches causing you, Morrison and Worsley to hold your heads in pain. The eerie " +
+                          "purple glow from before appears around the specimen again as it floats up several feet in the air. " +
+                          "Particles begin eating away at your surroundings like before until you once again find yourself " +
+                          "being pulled into the vortex.");
+    }
+    // The Player returns back to the Facility
+    Console.WriteLine("");
+    Console.WriteLine("As you return back to the facility, you look around disoriented. Morrison grabs you by the shoulder.");
+
+    pauseDialouge = true;
+    while (pauseDialouge == true)
+    {
+        Console.WriteLine("");
+        Console.WriteLine("Enter in the letter \"C\" To Continue...");
+        string contDialouge = Console.ReadLine();
+        if (contDialouge.ToLower() == "c")
+        {
+            pauseDialouge = false;
+        }
+    }
+
+    Console.WriteLine("");
+    Console.WriteLine("Sgt. Morrison: “Hey, are you alright? You’ve been staring at the specimen for a while now.”");
+    Console.WriteLine("Vernon (You): “I don’t know… I was just in some sort of alternate reality I think? My head kind of " +
+                      "hurts…”");
+    Console.WriteLine("Sgt. Morrison: “Alright come with me, we need to get you to sickbay for a checkup, you know the drill.”");
+
+    pauseDialouge = true;
+    while (pauseDialouge == true)
+    {
+        Console.WriteLine("");
+        Console.WriteLine("Enter in the letter \"C\" To Continue...");
+        string contDialouge = Console.ReadLine();
+        if (contDialouge.ToLower() == "c")
+        {
+            pauseDialouge = false;
+        }
+    }
+
+    Console.WriteLine("");
+    Console.WriteLine("Both of you exit the room and head towards Sickbay. On the way you pass by the Security Checkpoint " +
+                      "where Worsley is stationed.");
+
+    pauseDialouge = true;
+    while (pauseDialouge == true)
+    {
+        Console.WriteLine("");
+        Console.WriteLine("Enter in the letter \"C\" To Continue...");
+        string contDialouge = Console.ReadLine();
+        if (contDialouge.ToLower() == "c")
+        {
+            pauseDialouge = false;
+        }
+    }
+
+    Console.WriteLine("");
+    Console.WriteLine("Specialist Worsley: “Is everything alright!? I heard the alarm go off and I was about to call in a " +
+                      "detachment.”");
+    Console.WriteLine("Sgt. Morrison: “Vernon had an experience with the specimen, I’m taking him to Sickbay for a deep " +
+                      "analysis.”");
+    Console.WriteLine("Specialist Worsley: “What do you mean by experience?”");
+    Console.WriteLine("Sgt. Morrison: “We’ll talk about it later, right now making sure Vernon isn’t affected by the specimen " +
+                      "is more important.”");
+
+    pauseDialouge = true;
+    while (pauseDialouge == true)
+    {
+        Console.WriteLine("");
+        Console.WriteLine("Enter in the letter \"C\" To Continue...");
+        string contDialouge = Console.ReadLine();
+        if (contDialouge.ToLower() == "c")
+        {
+            pauseDialouge = false;
+        }
+    }
 }
