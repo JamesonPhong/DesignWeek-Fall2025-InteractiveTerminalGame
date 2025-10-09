@@ -639,4 +639,28 @@ else if (choiceThreeB == true)
             pauseDialouge = false;
         }
     }
+    // Endings based on who is alive
+    // This Ending depends on if Worsley is dead from Choice 2A in Choice 1A
+    if (worsleyDead == true)
+    {
+        Console.WriteLine("");
+        Console.WriteLine("Approaching the end of the hallway, the images of Worsley’s horrible mutilation as he died " +
+                          "tragically in the alternate reality comes back to mind. As you round the corner and look at " +
+                          "Worsley one last time, you notice something… Weren’t Worsley’s eyes blue?");
+    }
+    // This Ending depends on if Morrison is dead from Choice 2A in Choice 1B
+    else if (morrisonDead == true)
+    {
+        Console.WriteLine("");
+        Console.WriteLine("Approaching the end of the hallway, the sound of Morrison’s haunting screams as he died tragically " +
+                          "in the alternate reality echo in your ear. As you arrive at Sickbay and watch as Morrison leaves, " +
+                          "you notice something… Where did Morrison’s scar go?");
+    }
+    // This Ending depends on if both Worsley and Morrison are alive
+    else
+    {
+        Console.WriteLine("");
+        Console.WriteLine("Approaching the end of the hallway, your headache starts feeling a bit worse. As you round the " +
+                          "corner, you thought you heard somebody whisper your name… Was that your voice?");
+    }
 }
