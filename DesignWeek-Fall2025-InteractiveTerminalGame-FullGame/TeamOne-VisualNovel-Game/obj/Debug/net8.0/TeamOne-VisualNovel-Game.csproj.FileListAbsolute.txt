@@ -1,0 +1,14 @@
+C:\Users\james\source\repos\DesignWeek-Fall2025-InteractiveTerminalGame-FullGame\TeamOne-VisualNovel-Game\bin\Debug\net8.0\TeamOne-VisualNovel-Game.exe
+C:\Users\james\source\repos\DesignWeek-Fall2025-InteractiveTerminalGame-FullGame\TeamOne-VisualNovel-Game\bin\Debug\net8.0\TeamOne-VisualNovel-Game.deps.json
+C:\Users\james\source\repos\DesignWeek-Fall2025-InteractiveTerminalGame-FullGame\TeamOne-VisualNovel-Game\bin\Debug\net8.0\TeamOne-VisualNovel-Game.runtimeconfig.json
+C:\Users\james\source\repos\DesignWeek-Fall2025-InteractiveTerminalGame-FullGame\TeamOne-VisualNovel-Game\bin\Debug\net8.0\TeamOne-VisualNovel-Game.dll
+C:\Users\james\source\repos\DesignWeek-Fall2025-InteractiveTerminalGame-FullGame\TeamOne-VisualNovel-Game\bin\Debug\net8.0\TeamOne-VisualNovel-Game.pdb
+C:\Users\james\source\repos\DesignWeek-Fall2025-InteractiveTerminalGame-FullGame\TeamOne-VisualNovel-Game\obj\Debug\net8.0\TeamOne-VisualNovel-Game.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\james\source\repos\DesignWeek-Fall2025-InteractiveTerminalGame-FullGame\TeamOne-VisualNovel-Game\obj\Debug\net8.0\TeamOne-VisualNovel-Game.AssemblyInfoInputs.cache
+C:\Users\james\source\repos\DesignWeek-Fall2025-InteractiveTerminalGame-FullGame\TeamOne-VisualNovel-Game\obj\Debug\net8.0\TeamOne-VisualNovel-Game.AssemblyInfo.cs
+C:\Users\james\source\repos\DesignWeek-Fall2025-InteractiveTerminalGame-FullGame\TeamOne-VisualNovel-Game\obj\Debug\net8.0\TeamOne-VisualNovel-Game.csproj.CoreCompileInputs.cache
+C:\Users\james\source\repos\DesignWeek-Fall2025-InteractiveTerminalGame-FullGame\TeamOne-VisualNovel-Game\obj\Debug\net8.0\TeamOne-VisualNovel-Game.dll
+C:\Users\james\source\repos\DesignWeek-Fall2025-InteractiveTerminalGame-FullGame\TeamOne-VisualNovel-Game\obj\Debug\net8.0\refint\TeamOne-VisualNovel-Game.dll
+C:\Users\james\source\repos\DesignWeek-Fall2025-InteractiveTerminalGame-FullGame\TeamOne-VisualNovel-Game\obj\Debug\net8.0\TeamOne-VisualNovel-Game.pdb
+C:\Users\james\source\repos\DesignWeek-Fall2025-InteractiveTerminalGame-FullGame\TeamOne-VisualNovel-Game\obj\Debug\net8.0\TeamOne-VisualNovel-Game.genruntimeconfig.cache
+C:\Users\james\source\repos\DesignWeek-Fall2025-InteractiveTerminalGame-FullGame\TeamOne-VisualNovel-Game\obj\Debug\net8.0\ref\TeamOne-VisualNovel-Game.dll
