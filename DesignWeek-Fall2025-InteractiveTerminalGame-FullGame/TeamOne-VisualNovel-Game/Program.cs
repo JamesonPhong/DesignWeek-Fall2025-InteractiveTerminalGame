@@ -1,4 +1,5 @@
 ﻿// Introduction to the Story
+using System.ComponentModel.Design;
 using System.Runtime.InteropServices;
 
 Console.WriteLine("It started as a normal day, working within the B-Wing of Site-67. As you did your mundane patrols down the " +
@@ -360,15 +361,26 @@ bool choiceStoryFour = false;
 bool choiceStoryFive = false;
 bool choiceOneA = false;
 bool choiceOneB = false;
+bool choiceOneC = false;
 bool choiceTwoA = false;
 bool choiceTwoB = false;
+bool choiceTwoC = false;
 bool choiceThreeA = false;
 bool choiceThreeB = false;
+bool choiceFourA = false;
+bool choiceFourB = false;
+bool choiceFourC = false;
+bool choiceFiveA = false;
+bool choiceFiveB = false;
+bool choiceFiveC = false;
+bool choiceSixA = false;
+bool choiceSixB = false;
 bool worsleyDead = false;
 bool worsleyMissing = false;
 bool morrisonDead = false;
 bool morrisonMissing = false;
 bool vernonDead = false;
+bool funnyEnd = false;
 while (choice == true)
 {
     Console.WriteLine("");
@@ -1253,6 +1265,18 @@ else if (choiceStoryFour == true) // Storyline 4 - The Wasteland
         Console.WriteLine("");
         Console.WriteLine("You ram the car sending both you and the fleeing bandits straight off the cliffside.");
 
+        pauseDialouge = true;
+        while (pauseDialouge == true)
+        {
+            Console.WriteLine("");
+            Console.WriteLine("Press Enter to Continue...");
+            string contDialouge = Console.ReadLine();
+            if (contDialouge == "")
+            {
+                pauseDialouge = false;
+            }
+        }
+
         vernonDead = true;
     }
     // This is the dialouge for Choice 3B
@@ -1427,6 +1451,18 @@ else if (choiceStoryFour == true) // Storyline 4 - The Wasteland
                               "from before appears around the specimen again as it floats up several feet in the air. Particles " +
                               "begin eating away at your surroundings like before until you once again find yourself being pulled " +
                               "into the vortex.");
+
+            pauseDialouge = true;
+            while (pauseDialouge == true)
+            {
+                Console.WriteLine("");
+                Console.WriteLine("Press Enter to Continue...");
+                string contDialouge = Console.ReadLine();
+                if (contDialouge == "")
+                {
+                    pauseDialouge = false;
+                }
+            }
         }
         else if (worsleyDead == true)
         {
@@ -1434,6 +1470,18 @@ else if (choiceStoryFour == true) // Storyline 4 - The Wasteland
                               "from before appears around the specimen again as it floats up several feet in the air. Particles " +
                               "begin eating away at your surroundings like before until you once again find yourself being pulled " +
                               "into the vortex.");
+
+            pauseDialouge = true;
+            while (pauseDialouge == true)
+            {
+                Console.WriteLine("");
+                Console.WriteLine("Press Enter to Continue...");
+                string contDialouge = Console.ReadLine();
+                if (contDialouge == "")
+                {
+                    pauseDialouge = false;
+                }
+            }
         }
         else
         {
@@ -1441,17 +1489,718 @@ else if (choiceStoryFour == true) // Storyline 4 - The Wasteland
                               "purple glow from before appears around the specimen again as it floats up several feet in the air. " +
                               "Particles begin eating away at your surroundings like before until you once again find yourself " +
                               "being pulled into the vortex.");
+
+            pauseDialouge = true;
+            while (pauseDialouge == true)
+            {
+                Console.WriteLine("");
+                Console.WriteLine("Press Enter to Continue...");
+                string contDialouge = Console.ReadLine();
+                if (contDialouge == "")
+                {
+                    pauseDialouge = false;
+                }
+            }
         }
     }
-    else if (choiceStoryFive == true) // Storyline 5 - Bent Reality
-    {
+}
+else if (choiceStoryFive == true) // Storyline 5 - Bent Reality
+{
+    Console.WriteLine("");
+    Console.WriteLine("You are being sucked through the wormhole. Colors twist, your stomach flips, and somewhere you " +
+                      "hear a duck quack in the void. What should you do?");
 
+    choice = true;
+    while (choice == true)
+    {
+        Console.WriteLine("");
+        Console.WriteLine("Enter in the Corresponding Number to continue...");
+        Console.WriteLine("");
+        Console.WriteLine("[1] Scream dramatically");
+        Console.WriteLine("[2] Hold your breath and brace");
+        Console.WriteLine("[3] Accept your fate with stoic dignity");
+        int choiceOne = int.Parse(Console.ReadLine());
+        if (choiceOne == 1)
+        {
+            choiceOneA = true;
+            choice = false;
+        }
+        else if (choiceOne == 2)
+        {
+            choiceOneB = true;
+            choice = false;
+        }
+        else if (choiceOne == 3)
+        {
+            choiceOneC = true;
+            choice = false;
+        }
     }
+    if (choiceOneA == true)
+    {
+        Console.WriteLine("");
+        Console.WriteLine("Your scream echoes endlessly.");
+
+        pauseDialouge = true;
+        while (pauseDialouge == true)
+        {
+            Console.WriteLine("");
+            Console.WriteLine("Press Enter to Continue...");
+            string contDialouge = Console.ReadLine();
+            if (contDialouge == "")
+            {
+                pauseDialouge = false;
+            }
+        }
+
+        Console.WriteLine("DISEMBODIED VOICE: “Wow, dramatic much?”");
+
+        pauseDialouge = true;
+        while (pauseDialouge == true)
+        {
+            Console.WriteLine("");
+            Console.WriteLine("Press Enter to Continue...");
+            string contDialouge = Console.ReadLine();
+            if (contDialouge == "")
+            {
+                pauseDialouge = false;
+            }
+        }
+
+        Console.WriteLine("You feel mildly embarrassed but continue hurtling through the void. Eventually, you slam " +
+                          "face-first into something soft and squishy. You’re alive… probably. Looking up, you see " +
+                          "floating rubber duck islands and a sky that smells faintly of bacon. A hovering vending " +
+                          "machine looms over you, glowing ominously.");
+
+        pauseDialouge = true;
+        while (pauseDialouge == true)
+        {
+            Console.WriteLine("");
+            Console.WriteLine("Press Enter to Continue...");
+            string contDialouge = Console.ReadLine();
+            if (contDialouge == "")
+            {
+                pauseDialouge = false;
+            }
+        }
+
+        Console.WriteLine("VENDING MACHINE: “WELCOME, HERO OF SNACKS! INSERT COIN TO BEGIN YOUR QUEST.”");
+
+        choice = true;
+        while (choice == true)
+        {
+            Console.WriteLine("");
+            Console.WriteLine("Enter in the Corresponding Number to continue...");
+            Console.WriteLine("");
+            Console.WriteLine("[1] Ask where you are");
+            Console.WriteLine("[2] Kick the vending machine");
+            Console.WriteLine("[3] Pretend to insert an imaginary coin");
+            int choiceTwo = int.Parse(Console.ReadLine());
+            if (choiceTwo == 1)
+            {
+                choiceTwoA = true;
+                choice = false;
+            }
+            else if (choiceTwo == 2)
+            {
+                choiceTwoB = true;
+                choice = false;
+            }
+            else if (choiceTwo == 3)
+            {
+                choiceTwoC = true;
+                choice = false;
+            }
+        }
+    }
+    else if (choiceOneB == true)
+    {
+        Console.WriteLine("");
+        Console.WriteLine("You hold your breath, instantly pass out, and drift into a puddle of cosmic soup. A small " +
+                          "alien creature pokes your helmet.");
+
+        pauseDialouge = true;
+        while (pauseDialouge == true)
+        {
+            Console.WriteLine("");
+            Console.WriteLine("Press Enter to Continue...");
+            string contDialouge = Console.ReadLine();
+            if (contDialouge == "")
+            {
+                pauseDialouge = false;
+            }
+        }
+
+        Console.WriteLine("DISEMBODIED VOICE: “He dead?”");
+        Console.WriteLine("ALIEN CREATURE:  “Yeah. Classic rookie move.”");
+
+        pauseDialouge = true;
+        while (pauseDialouge == true)
+        {
+            Console.WriteLine("");
+            Console.WriteLine("Press Enter to Continue...");
+            string contDialouge = Console.ReadLine();
+            if (contDialouge == "")
+            {
+                pauseDialouge = false;
+            }
+        }
+
+        funnyEnd = true;
+    }
+    else if (choiceOneC == true)
+    {
+        Console.WriteLine("");
+        Console.WriteLine("You slam face-first into something soft and squishy. You’re alive… probably. Looking up, you " +
+                          "see floating rubber duck islands and a sky that smells faintly of bacon. A hovering vending " +
+                          "machine looms over you, glowing ominously.");
+
+        pauseDialouge = true;
+        while (pauseDialouge == true)
+        {
+            Console.WriteLine("");
+            Console.WriteLine("Press Enter to Continue...");
+            string contDialouge = Console.ReadLine();
+            if (contDialouge == "")
+            {
+                pauseDialouge = false;
+            }
+        }
+
+        Console.WriteLine("VENDING MACHINE: “WELCOME, HERO OF SNACKS! INSERT COIN TO BEGIN YOUR QUEST.”");
+
+        choice = true;
+        while (choice == true)
+        {
+            Console.WriteLine("");
+            Console.WriteLine("Enter in the Corresponding Number to continue...");
+            Console.WriteLine("");
+            Console.WriteLine("[1] Ask where you are");
+            Console.WriteLine("[2] Kick the vending machine");
+            Console.WriteLine("[3] Pretend to insert an imaginary coin");
+            int choiceTwo = int.Parse(Console.ReadLine());
+            if (choiceTwo == 1)
+            {
+                choiceTwoA = true;
+                choice = false;
+            }
+            else if (choiceTwo == 2)
+            {
+                choiceTwoB = true;
+                choice = false;
+            }
+            else if (choiceTwo == 3)
+            {
+                choiceTwoC = true;
+                choice = false;
+            }
+        }
+    }
+    if (choiceTwoA == true)
+    {
+        Console.WriteLine("");
+        Console.WriteLine("VERNON (YOU): “Where am I?”");
+        Console.WriteLine("VENDING MACHINE: “YOU ARE IN THE REALM OF SNACKOS PRIME. ALL HAIL THE ADMINISTRATOR OF CHAOS!”");
+
+        pauseDialouge = true;
+        while (pauseDialouge == true)
+        {
+            Console.WriteLine("");
+            Console.WriteLine("Press Enter to Continue...");
+            string contDialouge = Console.ReadLine();
+            if (contDialouge == "")
+            {
+                pauseDialouge = false;
+            }
+        }
+
+        Console.WriteLine("The vending machine explodes into confetti for no reason. You find a glowing Dorito on the " +
+                          "ground. What should you do with it?");
+
+        choice = true;
+        while (choice == true)
+        {
+            Console.WriteLine("");
+            Console.WriteLine("Enter in the Corresponding Number to continue...");
+            Console.WriteLine("");
+            Console.WriteLine("[1] Eat the Dorito");
+            Console.WriteLine("[2] Pocket the Dorito");
+            int choiceThree = int.Parse(Console.ReadLine());
+            if (choiceThree == 1)
+            {
+                choiceThreeA = true;
+                choice = false;
+            }
+            else if (choiceThree == 2)
+            {
+                choiceThreeB = true;
+                choice = false;
+            }
+        }
+    }
+    else if (choiceTwoB == true)
+    {
+        Console.WriteLine("");
+        Console.WriteLine("You kick the machine. It dispenses 274 bags of chips directly onto your face. You are buried " +
+                          "under the weight of your poor decision.");
+
+        pauseDialouge = true;
+        while (pauseDialouge == true)
+        {
+            Console.WriteLine("");
+            Console.WriteLine("Press Enter to Continue...");
+            string contDialouge = Console.ReadLine();
+            if (contDialouge == "")
+            {
+                pauseDialouge = false;
+            }
+        }
+
+        funnyEnd = true;
+    }
+    else if (choiceTwoC == true)
+    {
+        Console.WriteLine("");
+        Console.WriteLine("You pretend to insert an imaginary coin. The vending machine beeps.");
+
+        pauseDialouge = true;
+        while (pauseDialouge == true)
+        {
+            Console.WriteLine("");
+            Console.WriteLine("Press Enter to Continue...");
+            string contDialouge = Console.ReadLine();
+            if (contDialouge == "")
+            {
+                pauseDialouge = false;
+            }
+        }
+
+        Console.WriteLine("VENDING MACHINE: “IMAGINATION ACCEPTED.”");
+
+        pauseDialouge = true;
+        while (pauseDialouge == true)
+        {
+            Console.WriteLine("");
+            Console.WriteLine("Press Enter to Continue...");
+            string contDialouge = Console.ReadLine();
+            if (contDialouge == "")
+            {
+                pauseDialouge = false;
+            }
+        }
+
+        Console.WriteLine("It dispenses a sword made entirely of Doritos. You obtained: Snack Blade!");
+
+        choiceThreeB = true;
+    }
+    if (choiceThreeA == true)
+    {
+        Console.WriteLine("");
+        Console.WriteLine("You eat the glowing Dorito. Infinite crunch echoes through eternity. Your jaw disintegrates. Time " +
+                          "collapses.");
+
+        pauseDialouge = true;
+        while (pauseDialouge == true)
+        {
+            Console.WriteLine("");
+            Console.WriteLine("Press Enter to Continue...");
+            string contDialouge = Console.ReadLine();
+            if (contDialouge == "")
+            {
+                pauseDialouge = false;
+            }
+        }
+
+        funnyEnd = true;
+    }
+    else if (choiceThreeB == true)
+    {
+        Console.WriteLine("");
+        Console.WriteLine("A loud kazoo sound announces the arrival of a tall man wearing a lab coat made entirely of post-it " +
+                          "notes. He has sunglasses, a clipboard, and an aura of pure nonsense.");
+
+        pauseDialouge = true;
+        while (pauseDialouge == true)
+        {
+            Console.WriteLine("");
+            Console.WriteLine("Press Enter to Continue...");
+            string contDialouge = Console.ReadLine();
+            if (contDialouge == "")
+            {
+                pauseDialouge = false;
+            }
+        }
+
+        Console.WriteLine("ADMINISTRATOR OF CHAOS: “Ah, the new intern from Site-67, I presume? You’re late for orientation!”");
+
+        choice = true;
+        while (choice == true)
+        {
+            Console.WriteLine("");
+            Console.WriteLine("Enter in the Corresponding Number to continue...");
+            Console.WriteLine("");
+            Console.WriteLine("[1] Challenge him to a duel");
+            Console.WriteLine("[2] Ask if there’s Wi-Fi here");
+            Console.WriteLine("[3] Pretend to be a dimensional inspector");
+            int choiceFour = int.Parse(Console.ReadLine());
+            if (choiceFour == 1)
+            {
+                choiceFourA = true;
+                choice = false;
+            }
+            else if (choiceFour == 2)
+            {
+                choiceFourB = true;
+                choice = false;
+            }
+            else if (choiceFour == 3)
+            {
+                choiceFourC = true;
+                choice = false;
+            }
+        }
+    }
+    if (choiceFourA == true)
+    {
+        Console.WriteLine("");
+        Console.WriteLine("You raise your Snack Blade. He pulls out… a stapler?");
+
+        pauseDialouge = true;
+        while (pauseDialouge == true)
+        {
+            Console.WriteLine("");
+            Console.WriteLine("Press Enter to Continue...");
+            string contDialouge = Console.ReadLine();
+            if (contDialouge == "")
+            {
+                pauseDialouge = false;
+            }
+        }
+
+        Console.WriteLine("ADMINISTRATOR OF CHAOS: “PREPARE FOR CORPORATE COMBAT!”");
+
+        choice = true;
+        while (choice == true)
+        {
+            Console.WriteLine("");
+            Console.WriteLine("Enter in the Corresponding Number to continue...");
+            Console.WriteLine("");
+            Console.WriteLine("[1] Throw your shoe");
+            Console.WriteLine("[2] Use Snack Blade");
+            Console.WriteLine("[3] Dance menacingly");
+            int choiceFive = int.Parse(Console.ReadLine());
+            if (choiceFive == 1)
+            {
+                choiceFiveA = true;
+                choice = false;
+            }
+            else if (choiceFive == 2)
+            {
+                choiceFiveB = true;
+                choice = false;
+            }
+            else if (choiceFive == 3)
+            {
+                choiceFiveC = true;
+                choice = false;
+            }
+        }
+    }
+    else if (choiceFourB == true)
+    {
+        Console.WriteLine("VERNON (YOU): “Is there Wi-Fi here?”");
+        Console.WriteLine("ADMINISTRATOR OF CHAOS: *gasp* “HOW DARE YOU SPEAK OF SIGNALS IN MY CHAOTIC REALM!”");
+
+        pauseDialouge = true;
+        while (pauseDialouge == true)
+        {
+            Console.WriteLine("");
+            Console.WriteLine("Press Enter to Continue...");
+            string contDialouge = Console.ReadLine();
+            if (contDialouge == "")
+            {
+                pauseDialouge = false;
+            }
+        }
+
+        Console.WriteLine("A lightning bolt made of dial-up tones vaporizes you.");
+
+        pauseDialouge = true;
+        while (pauseDialouge == true)
+        {
+            Console.WriteLine("");
+            Console.WriteLine("Press Enter to Continue...");
+            string contDialouge = Console.ReadLine();
+            if (contDialouge == "")
+            {
+                pauseDialouge = false;
+            }
+        }
+
+        funnyEnd = true;
+    }
+    else if (choiceFourC == true)
+    {
+        Console.WriteLine("");
+        Console.WriteLine("VERNON (YOU): “Dimensional Inspection Unit. Routine check.”");
+        Console.WriteLine("ADMINISTRATOR OF CHAOS: “Oh, thank goodness! We’ve been having issues with our narrative " +
+                          "stability.”");
+
+        pauseDialouge = true;
+        while (pauseDialouge == true)
+        {
+            Console.WriteLine("");
+            Console.WriteLine("Press Enter to Continue...");
+            string contDialouge = Console.ReadLine();
+            if (contDialouge == "")
+            {
+                pauseDialouge = false;
+            }
+        }
+
+        pauseDialouge = true;
+        while (pauseDialouge == true)
+        {
+            Console.WriteLine("");
+            Console.WriteLine("Press Enter to Continue...");
+            string contDialouge = Console.ReadLine();
+            if (contDialouge == "")
+            {
+                pauseDialouge = false;
+            }
+        }
+
+        Console.WriteLine("He hands you a Reality Toaster — apparently the key to controlling this world.");
+
+        pauseDialouge = true;
+        while (pauseDialouge == true)
+        {
+            Console.WriteLine("");
+            Console.WriteLine("Press Enter to Continue...");
+            string contDialouge = Console.ReadLine();
+            if (contDialouge == "")
+            {
+                pauseDialouge = false;
+            }
+        }
+
+        Console.WriteLine("ADMINISTRATOR OF CHAOS: “Just don’t press the ‘Bagel’ setting. It tears holes in space.”");
+
+        pauseDialouge = true;
+        while (pauseDialouge == true)
+        {
+            Console.WriteLine("");
+            Console.WriteLine("Press Enter to Continue...");
+            string contDialouge = Console.ReadLine();
+            if (contDialouge == "")
+            {
+                pauseDialouge = false;
+            }
+        }
+
+        Console.WriteLine("The Reality Toaster hums with cosmic energy. It has two settings:");
+
+        choice = true;
+        while (choice == true)
+        {
+            Console.WriteLine("");
+            Console.WriteLine("Enter in the Corresponding Number to continue...");
+            Console.WriteLine("");
+            Console.WriteLine("[1] Stay and Rule");
+            Console.WriteLine("[2] Bagel Mode");
+            int choiceSix = int.Parse(Console.ReadLine());
+            if (choiceSix == 1)
+            {
+                choiceSixA = true;
+                choice = false;
+            }
+            else if (choiceSix == 2)
+            {
+                choiceSixB = true;
+                choice = false;
+            }
+        }
+    }
+    if (choiceFiveA == true)
+    {
+        Console.WriteLine("");
+        Console.WriteLine("You throw your shoe with confidence. It boomerangs perfectly — right into your face. You collapse.");
+
+        pauseDialouge = true;
+        while (pauseDialouge == true)
+        {
+            Console.WriteLine("");
+            Console.WriteLine("Press Enter to Continue...");
+            string contDialouge = Console.ReadLine();
+            if (contDialouge == "")
+            {
+                pauseDialouge = false;
+            }
+        }
+
+        Console.WriteLine("ADMINISTRATOR OF CHAOS:  “Wow, that’s going on the highlight reel.”");
+
+        pauseDialouge = true;
+        while (pauseDialouge == true)
+        {
+            Console.WriteLine("");
+            Console.WriteLine("Press Enter to Continue...");
+            string contDialouge = Console.ReadLine();
+            if (contDialouge == "")
+            {
+                pauseDialouge = false;
+            }
+        }
+
+        funnyEnd = true;
+    }
+    else if (choiceFiveB == true)
+    {
+        Console.WriteLine("");
+        Console.WriteLine("You land a heroic hit with your Snack Blade. The Administrator explodes into confetti, coupons, " +
+                          "and mild disappointment. The Reality Toaster drops to the ground.");
+        Console.WriteLine("The Reality Toaster hums with cosmic energy. It has two settings:");
+
+        choice = true;
+        while (choice == true)
+        {
+            Console.WriteLine("");
+            Console.WriteLine("Enter in the Corresponding Number to continue...");
+            Console.WriteLine("");
+            Console.WriteLine("[1] Stay and Rule");
+            Console.WriteLine("[2] Bagel Mode");
+            int choiceSix = int.Parse(Console.ReadLine());
+            if (choiceSix == 1)
+            {
+                choiceSixA = true;
+                choice = false;
+            }
+            else if (choiceSix == 2)
+            {
+                choiceSixB = true;
+                choice = false;
+            }
+        }
+    }
+    else if (choiceFiveC == true)
+    {
+        Console.WriteLine("");
+        Console.WriteLine("You dance menacingly. The Administrator claps.");
+
+        pauseDialouge = true;
+        while (pauseDialouge == true)
+        {
+            Console.WriteLine("");
+            Console.WriteLine("Press Enter to Continue...");
+            string contDialouge = Console.ReadLine();
+            if (contDialouge == "")
+            {
+                pauseDialouge = false;
+            }
+        }
+
+        Console.WriteLine("ADMINISTRATOR OF CHAOS: “Beautiful! I surrender to your interpretive dominance!”");
+
+        pauseDialouge = true;
+        while (pauseDialouge == true)
+        {
+            Console.WriteLine("");
+            Console.WriteLine("Press Enter to Continue...");
+            string contDialouge = Console.ReadLine();
+            if (contDialouge == "")
+            {
+                pauseDialouge = false;
+            }
+        }
+
+        Console.WriteLine("He gives you the Reality Toaster and vanishes. The Reality Toaster hums with cosmic energy. It has " +
+                          "two settings:");
+
+        choice = true;
+        while (choice == true)
+        {
+            Console.WriteLine("");
+            Console.WriteLine("Enter in the Corresponding Number to continue...");
+            Console.WriteLine("");
+            Console.WriteLine("[1] Stay and Rule");
+            Console.WriteLine("[2] Bagel Mode");
+            int choiceSix = int.Parse(Console.ReadLine());
+            if (choiceSix == 1)
+            {
+                choiceSixA = true;
+                choice = false;
+            }
+            else if (choiceSix == 2)
+            {
+                choiceSixB = true;
+                choice = false;
+            }
+        }
+    }
+    if (choiceSixA == true)
+    {
+        Console.WriteLine("");
+        Console.WriteLine("You press “Stay.” A golden throne made of vending machines rises beneath you. The crowd chants, " +
+                          "“ALL HAIL THE SNACK LORD!” You rule eternally with crumbs of justice.");
+
+        pauseDialouge = true;
+        while (pauseDialouge == true)
+        {
+            Console.WriteLine("");
+            Console.WriteLine("Press Enter to Continue...");
+            string contDialouge = Console.ReadLine();
+            if (contDialouge == "")
+            {
+                pauseDialouge = false;
+            }
+        }
+
+        funnyEnd = true;
+    }
+    else if (choiceSixB == true)
+    {
+        Console.WriteLine("");
+        Console.WriteLine("You press “Bagel Mode.” Reality collapses into infinite breakfast. All universes become slightly " +
+                          "sticky. A duck quacks one final time.");
+
+        pauseDialouge = true;
+        while (pauseDialouge == true)
+        {
+            Console.WriteLine("");
+            Console.WriteLine("Press Enter to Continue...");
+            string contDialouge = Console.ReadLine();
+            if (contDialouge == "")
+            {
+                pauseDialouge = false;
+            }
+        }
+
+        funnyEnd = true;
+    }
+}
     // The Player returns back to the Facility
     // Endings based on who is alive, dead or missing
     // This Ending depends on if Veron died in the alternate reality
-    Console.WriteLine("");
-    if (vernonDead == true)
+    if (funnyEnd == true)
+    {
+        Console.WriteLine("Everybody stares at Vernon's twitching body, eyes rolled back and mouth foaming.");
+        pauseDialouge = true;
+        while (pauseDialouge == true)
+        {
+            Console.WriteLine("");
+            Console.WriteLine("Press Enter to Continue...");
+            string contDialouge = Console.ReadLine();
+            if (contDialouge == "")
+            {
+                pauseDialouge = false;
+            }
+        }
+        Console.WriteLine("SPC WORSLEY: Ehm... Think we went too far with this prank?");
+        Console.WriteLine("SGT. MORRISON: Nahhhh... Happy Birthday Vernon!");
+        Console.WriteLine("");
+        Console.WriteLine("[THE END]");
+    }
+    else if (vernonDead == true)
     {
         Console.WriteLine("After the vortex consumed Vernon, it disappeared. Sgt. Morrison immediately called SPC Worsley for " +
                           "backup. When the detachment arrives, they investigate surrounding area, looking for Vernon. But they " +
@@ -1661,4 +2410,3 @@ else if (choiceStoryFour == true) // Storyline 4 - The Wasteland
                               "corner, you thought you heard somebody whisper your name… Was that your voice?");
         }
     }
-}
