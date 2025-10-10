@@ -799,140 +799,11 @@ else if (choiceStoryThree == true) // Storyline 3 - Infested Spaceship
 }
 else if (choiceStoryFour == true) // Storyline 4 - The Wasteland
 {
-
-}
-else if (choiceStoryFive == true) // Storyline 5 - Bent Reality
-{
-
-}
-// The Player returns back to the Facility
-// Endings based on who is alive, dead or missing
-// This Ending depends on if Veron died in the alternate reality
-Console.WriteLine("");
-if (vernonDead == true)
-{
-    Console.WriteLine("After the vortex consumed Vernon, it disappeared. Sgt. Morrison immediately called SPC Worsley for " +
-                      "backup. When the detachment arrives, they investigate surrounding area, looking for Vernon. But they " +
-                      "never found him. People have begun to report that they sometimes see something in the corner of their " +
-                      "eye, some sort of shadowy figure. It almost looks like Vernon... Almost.");
-}
-// This Ending depends on if Worsley & Morrison is missing
-else if (vernonDead == false && morrisonMissing == true && worsleyMissing == true)
-{
-    Console.WriteLine("As you return back to the facility, you look around disoriented. You exit the room and head towards " +
-                      "Sickbay. On the way you pass by the Security Checkpoint where Worsley should be stationed.");
-
-    pauseDialouge = true;
-    while (pauseDialouge == true)
-    {
-        Console.WriteLine("");
-        Console.WriteLine("Press Enter to Continue...");
-        string contDialouge = Console.ReadLine();
-        if (contDialouge == "")
-        {
-            pauseDialouge = false;
-        }
-    }
-
-    Console.WriteLine("VERNON (YOU): “Where is everybody?”");
-
-    pauseDialouge = true;
-    while (pauseDialouge == true)
-    {
-        Console.WriteLine("");
-        Console.WriteLine("Press Enter to Continue...");
-        string contDialouge = Console.ReadLine();
-        if (contDialouge == "")
-        {
-            pauseDialouge = false;
-        }
-    }
-
-    Console.WriteLine("As you continued looking around the Facility, you can't seem to find anybody... Is something watching you?");
-}
-// This Ending depends on if Morrison is missing
-else if (vernonDead == false && morrisonMissing == true && worsleyMissing == false)
-{
-    Console.WriteLine("As you return back to the facility, you look around disoriented. You exit the room and head towards " +
-                      "Sickbay. On the way you pass by the Security Checkpoint where Worsley is stationed.");
-
-    pauseDialouge = true;
-    while (pauseDialouge == true)
-    {
-        Console.WriteLine("");
-        Console.WriteLine("Press Enter to Continue...");
-        string contDialouge = Console.ReadLine();
-        if (contDialouge == "")
-        {
-            pauseDialouge = false;
-        }
-    }
-
-    Console.WriteLine("SPC WORSLEY: “Is everything alright!? I heard the alarm go off and I was about to call in a " +
-                      "detachment.”");
-    Console.WriteLine("VERNON (YOU): “I had an.. Experience with the specimen, I’m going to Sickbay for a deep analysis.”");
-    Console.WriteLine("SPC WORSLEY: “What do you mean by experience?”");
-    Console.WriteLine("VERNON (YOU): “I'll talk about it later, right now I need to make sure I'm not affected by the specimen " +
-                      "in any way shape or form. By the way, where's Morrison?”");
-    Console.WriteLine("SPC WORSLEY: “... Who's Morrison?”");
-}
-// This Ending depends on if Worsley is missing
-else if (vernonDead == false && morrisonMissing == false && worsleyMissing == true)
-{
-    Console.WriteLine("As you return back to the facility, you look around disoriented. Morrison grabs you by the shoulder.");
-
-    pauseDialouge = true;
-    while (pauseDialouge == true)
-    {
-        Console.WriteLine("");
-        Console.WriteLine("Press Enter to Continue...");
-        string contDialouge = Console.ReadLine();
-        if (contDialouge == "")
-        {
-            pauseDialouge = false;
-        }
-    }
-
-    Console.WriteLine("SGT. MORRISON: “Hey, are you alright? You’ve been staring at the specimen for a while now.”");
-    Console.WriteLine("VERNON (YOU): “I don’t know… I was just in some sort of alternate reality I think? My head kind of " +
-                      "hurts…”");
-    Console.WriteLine("SGT. MORRISON: “Alright come with me, we need to get you to sickbay for a checkup, you know the drill.”");
-
-    pauseDialouge = true;
-    while (pauseDialouge == true)
-    {
-        Console.WriteLine("");
-        Console.WriteLine("Press Enter to Continue...");
-        string contDialouge = Console.ReadLine();
-        if (contDialouge == "")
-        {
-            pauseDialouge = false;
-        }
-    }
-
-    Console.WriteLine("Both of you exit the room and head towards Sickbay. On the way you pass by the Security Checkpoint " +
-                      "where should Worsley be stationed.");
-
-    pauseDialouge = true;
-    while (pauseDialouge == true)
-    {
-        Console.WriteLine("");
-        Console.WriteLine("Press Enter to Continue...");
-        string contDialouge = Console.ReadLine();
-        if (contDialouge == "")
-        {
-            pauseDialouge = false;
-        }
-    }
-
-    Console.WriteLine("VERNON (YOU): “Wait, where’s Worsley?”");
-    Console.WriteLine("SGT. MORRISON: “... You mean SPC Whitney?”");
-}
-// This Ending depends on if Worsley & Morrison is present
-else
-{
     Console.WriteLine("");
-    Console.WriteLine("As you return back to the facility, you look around disoriented. Morrison grabs you by the shoulder.");
+    Console.WriteLine("You suddenly find yourself inside some sort of buggy-like vehicle chasing after another buggy-like " +
+                      "vehicle at high speeds. The unbearable heat of the sun beats down upon you, feeling hotter than it " +
+                      "usually does. Had it not been for the bandana wrapped tightly around your face and goggles protecting " +
+                      "your eyes, the sand flying from the vehicle ahead of you would’ve blinded and choked you out.");
 
     pauseDialouge = true;
     while (pauseDialouge == true)
@@ -946,10 +817,9 @@ else
         }
     }
 
-    Console.WriteLine("Sgt. Morrison: “Hey, are you alright? You’ve been staring at the specimen for a while now.”");
-    Console.WriteLine("Vernon (You): “I don’t know… I was just in some sort of alternate reality I think? My head kind of " +
-                      "hurts…”");
-    Console.WriteLine("Sgt. Morrison: “Alright come with me, we need to get you to sickbay for a checkup, you know the drill.”");
+    Console.WriteLine("VERNON (YOU): “What the fuck!? What’s going on!?”");
+    Console.WriteLine("BANDIT MORRISON: “Hurry up V, we’ve gotta catch up to those scum-suckers before they make off with our " +
+                      "supplies!”");
 
     pauseDialouge = true;
     while (pauseDialouge == true)
@@ -963,8 +833,8 @@ else
         }
     }
 
-    Console.WriteLine("Both of you exit the room and head towards Sickbay. On the way you pass by the Security Checkpoint " +
-                      "where Worsley is stationed.");
+    Console.WriteLine("BANDIT MORRISON: “Gyahahaha! Light ‘em up W! Let’s teach these dust-eaters what happens to thieves who " +
+                      "steal supplies we stole first!”");
 
     pauseDialouge = true;
     while (pauseDialouge == true)
@@ -978,13 +848,11 @@ else
         }
     }
 
-    Console.WriteLine("Specialist Worsley: “Is everything alright!? I heard the alarm go off and I was about to call in a " +
-                      "detachment.”");
-    Console.WriteLine("Sgt. Morrison: “Vernon had an experience with the specimen, I’m taking him to Sickbay for a deep " +
-                      "analysis.”");
-    Console.WriteLine("Specialist Worsley: “What do you mean by experience?”");
-    Console.WriteLine("Sgt. Morrison: “We’ll talk about it later, right now making sure Vernon isn’t affected by the specimen " +
-                      "is more important.”");
+    Console.WriteLine("Glancing at the rear-view mirror you see Worsley garbed in bandit clothing on top of a gatling turret. " +
+                      "The whirring of the barrel serves as a warning to the incoming storm of bullets that pelt against the " +
+                      "fleeing vehicle’s shield. Very small but noticeable cracks begin to appear in the shield. One of the " +
+                      "bandits from the vehicle gets up and lifts what appears to be a quad launcher. A red laser appears " +
+                      "right in between you and Morrison.");
 
     pauseDialouge = true;
     while (pauseDialouge == true)
@@ -997,25 +865,800 @@ else
             pauseDialouge = false;
         }
     }
-    // Endings based on who is alive
-    // This Ending depends on if Worsley is died in the alternate reality
-    if (worsleyDead == true)
+
+    Console.WriteLine("BANDIT MORRISON: “Shit! Dodge V! Dodge!”");
+
+    // This is the First Decision the Player can make
+    choice = true;
+    while (choice == true)
     {
-        Console.WriteLine("Approaching the end of the hallway, the images of Worsley’s horrible mutilation as he died " +
-                          "tragically in the alternate reality comes back to mind. As you round the corner and look at " +
-                          "Worsley one last time, you notice something… Weren’t Worsley’s eyes blue?");
+        Console.WriteLine("");
+        Console.WriteLine("Enter in the Corresponding Number to continue...");
+        Console.WriteLine("");
+        Console.WriteLine("[1] Dodge Left to give Morrison a clearer shot");
+        Console.WriteLine("[2] Dodge Right to give Worsley an advantage");
+        int choiceOne = int.Parse(Console.ReadLine());
+        if (choiceOne == 1)
+        {
+            choiceOneA = true;
+            choice = false;
+        }
+        else if (choiceOne == 2)
+        {
+            choiceOneB = true;
+            choice = false;
+        }
     }
-    // This Ending depends on if Morrison is died in the alternate reality
-    else if (morrisonDead == true)
+
+    // This is the dialouge for Choice 1A
+    if (choiceOneA == true)
     {
-        Console.WriteLine("Approaching the end of the hallway, the sound of Morrison’s haunting screams as he died tragically " +
-                          "in the alternate reality echo in your ear. As you arrive at Sickbay and watch as Morrison leaves, " +
-                          "you notice something… Where did Morrison’s scar go?");
+        Console.WriteLine("");
+        Console.WriteLine("As you dodge the vehicle to the left, the missiles fly past you. By dodging left, you give " +
+                          "Morrison a clearer opening to fire upon the vehicle. Bigger cracks appear in the fleeing vehicle’s " +
+                          "shield, and you notice the occupants get a little bit more nervous. They throw something behind " +
+                          "their vehicle. Suddenly, smoke appears in front of you, obscuring your vision. When you clear the " +
+                          "smoke, the fleeing vehicle seems to have disappeared.");
+
+        pauseDialouge = true;
+        while (pauseDialouge == true)
+        {
+            Console.WriteLine("");
+            Console.WriteLine("Press Enter to Continue...");
+            string contDialouge = Console.ReadLine();
+            if (contDialouge == "")
+            {
+                pauseDialouge = false;
+            }
+        }
+
+        Console.WriteLine("BANDIT MORRISON: “Damn it, where did they go!?”");
+        Console.WriteLine("VERNON (YOU): “It looks like they either went down in the Caves here, or through the Valley.”");
+        Console.WriteLine("BANDIT WORSLEY: “There’s no way they fled to the Valley. They’d have no cover and with their " +
+                          "energy shield almost down, it’d be stupid of them to leave themselves open like that. They must’ve " +
+                          "gone down in the caves to hide.”");
+        Console.WriteLine("BANDIT MORRISON: “It’d be even stupider of them to go down in the caves. You know the Underground " +
+                          "is infested with those damn bugs. Even if they did go down in the caves we can cut them off at " +
+                          "the end if we go through the Valley, it’s faster that way.”");
+
+        // This is the Second Decision in Choice 1A the Player can make
+        choice = true;
+        while (choice == true)
+        {
+            Console.WriteLine("");
+            Console.WriteLine("Enter in the Corresponding Number to continue...");
+            Console.WriteLine("");
+            Console.WriteLine("[1] Go down into the Caves");
+            Console.WriteLine("[2] Go through the Valley");
+            int choiceTwo = int.Parse(Console.ReadLine());
+            if (choiceTwo == 1)
+            {
+                choiceTwoA = true;
+                choice = false;
+            }
+            else if (choiceTwo == 2)
+            {
+                choiceTwoB = true;
+                choice = false;
+            }
+        }
     }
-    // This Ending depends on if both Worsley & Morrison survived the alternate reality
+    // This is the dialouge for Choice 1B
+    else if (choiceOneB == true)
+    {
+        Console.WriteLine("");
+        Console.WriteLine("As you dodge the vehicle to the right, the missiles fly past you. By dodging right, you give " +
+                          "Worsley an opportunity to capitalize on the weakened parts of the shield. Bigger cracks appear in " +
+                          "the fleeing vehicle’s shield, and you notice the occupants get a little bit more nervous. They " +
+                          "throw something behind their vehicle. Suddenly, smoke appears in front of you, obscuring your " +
+                          "vision. When you clear the smoke, the fleeing vehicle seems to have disappeared.");
+
+        pauseDialouge = true;
+        while (pauseDialouge == true)
+        {
+            Console.WriteLine("");
+            Console.WriteLine("Press Enter to Continue...");
+            string contDialouge = Console.ReadLine();
+            if (contDialouge == "")
+            {
+                pauseDialouge = false;
+            }
+        }
+
+        Console.WriteLine("BANDIT MORRISON: “Damn it, where did they go!?”");
+        Console.WriteLine("VERNON (YOU): “It looks like they either went up the Mountain, or through the Valley.”");
+        Console.WriteLine("BANDIT MORRISON: “They’d be stupid to go into the Valley. There’s no cover, and with their energy " +
+                          "shield almost down, there is no tactical value exposing themselves. They must’ve gone up the " +
+                          "Mountain for a better vantage point.”");
+        Console.WriteLine("BANDIT WORSLEY: “There are Vultures up the Mountain, and we all know how territorial they are. The " +
+                          "risk wouldn’t be worth the high ground advantage. Besides, if they did go up there we can just let " +
+                          "the Vultures take care of ‘em.");
+
+        // This is the Second Decision in Choice 1B the Player can make
+        choice = true;
+        while (choice == true)
+        {
+            Console.WriteLine("");
+            Console.WriteLine("Enter in the Corresponding Number to continue...");
+            Console.WriteLine("");
+            Console.WriteLine("[1] Go up the Mountain");
+            Console.WriteLine("[2] Go through the Valley");
+            int choiceTwo = int.Parse(Console.ReadLine());
+            if (choiceTwo == 1)
+            {
+                choiceTwoA = true;
+                choice = false;
+            }
+            else if (choiceTwo == 2)
+            {
+                choiceTwoB = true;
+                choice = false;
+            }
+        }
+    }
+    // This is the dialouge for Choice 2A in Choice 1A
+    if (choiceOneA == true && choiceTwoA == true)
+    {
+        Console.WriteLine("");
+        Console.WriteLine("Steering the buggy into the cave, you turn the headlights on. Immediately, you hear the sound of " +
+                          "skittering echoing faintly in the walls. As you navigate through the cave the skittering gets " +
+                          "louder until finally you are faced with scorpion-like bugs.");
+
+        pauseDialouge = true;
+        while (pauseDialouge == true)
+        {
+            Console.WriteLine("");
+            Console.WriteLine("Press Enter to Continue...");
+            string contDialouge = Console.ReadLine();
+            if (contDialouge == "")
+            {
+                pauseDialouge = false;
+            }
+        }
+
+        Console.WriteLine("BANDIT MORRISON: “I knew this would happen… Get ready boys! Looks like we’re in for one helluva " +
+                          "fight!”");
+
+        pauseDialouge = true;
+        while (pauseDialouge == true)
+        {
+            Console.WriteLine("");
+            Console.WriteLine("Press Enter to Continue...");
+            string contDialouge = Console.ReadLine();
+            if (contDialouge == "")
+            {
+                pauseDialouge = false;
+            }
+        }
+
+        Console.WriteLine("A grueling battle against the scorpion-like bugs ensues. Blood and guts from the insects fly " +
+                          "everywhere as you, Morrison and Worsley fire away at the swarming bugs until eventually all of " +
+                          "you managed to clear a path out.");
+
+        pauseDialouge = true;
+        while (pauseDialouge == true)
+        {
+            Console.WriteLine("");
+            Console.WriteLine("Press Enter to Continue...");
+            string contDialouge = Console.ReadLine();
+            if (contDialouge == "")
+            {
+                pauseDialouge = false;
+            }
+        }
+
+        Console.WriteLine("VERNON (YOU): “The path out is clear, buckle up!”");
+
+        pauseDialouge = true;
+        while (pauseDialouge == true)
+        {
+            Console.WriteLine("");
+            Console.WriteLine("Press Enter to Continue...");
+            string contDialouge = Console.ReadLine();
+            if (contDialouge == "")
+            {
+                pauseDialouge = false;
+            }
+        }
+
+        Console.WriteLine("The buggy shakes hard from behind and you hear a visceral scream behind you. As you turn you watch " +
+                          "in horror as Worsley is grabbed by a bug hidden in the shadows. Bugs swarm Worsley, ripping him " +
+                          "apart limb from limb. His pained cries echo in the Cave as the Bugs greedily feast on him. They " +
+                          "all take chunks out of him, blood painting the walls as his half-chewed organs wetly squelches on " +
+                          "the ground. All you can hear is dripping blood. You quickly make your way through the bloodied " +
+                          "corpses of the bugs and see a light ahead indicating the end of the Cave. As you clear the cave, you " +
+                          "see the fleeing vehicle just ahead resting at a cliffside. They seemed to have run out of fuel.");
+
+        worsleyDead = true;
+        pauseDialouge = true;
+        while (pauseDialouge == true)
+        {
+            Console.WriteLine("");
+            Console.WriteLine("Press Enter to Continue...");
+            string contDialouge = Console.ReadLine();
+            if (contDialouge == "")
+            {
+                pauseDialouge = false;
+            }
+        }
+
+        Console.WriteLine("BANDIT MORRISON: “Ohohoho! There they are! Time to end this!”");
+    }
+    // This is the dialouge for Choice 2A in Choice 1B
+    else if (choiceOneB == true && choiceTwoA == true)
+    {
+        Console.WriteLine("");
+        Console.WriteLine("Steering the buggy up the Mountain, you carefully follow the pathways. Immediately you hear " +
+                          "screeching echoing in the distance. As you navigate the road you notice a dust cloud far below the " +
+                          "mountain, but then you hear the screeching become louder. Up ahead you see tiny dots in the sky. " +
+                          "The Vultures are rapidly approaching.");
+
+        pauseDialouge = true;
+        while (pauseDialouge == true)
+        {
+            Console.WriteLine("");
+            Console.WriteLine("Press Enter to Continue...");
+            string contDialouge = Console.ReadLine();
+            if (contDialouge == "")
+            {
+                pauseDialouge = false;
+            }
+        }
+
+        Console.WriteLine("BANDIT WORSLEY: “Good news, we found the scrapheads. Bad news, the Vultures found us too!”");
+
+        pauseDialouge = true;
+        while (pauseDialouge == true)
+        {
+            Console.WriteLine("");
+            Console.WriteLine("Press Enter to Continue...");
+            string contDialouge = Console.ReadLine();
+            if (contDialouge == "")
+            {
+                pauseDialouge = false;
+            }
+        }
+
+        Console.WriteLine("An adrenaline-inducing battle begins as the Vultures surround the buggy, dive-bombing at you, " +
+                          "Morrison and Worsley. Narrowly dodging certain death, all of you manage to pick off the Vultures " +
+                          "out of the sky one by one, causing them to slowly but surely back off from attacking the buggy.");
+
+        pauseDialouge = true;
+        while (pauseDialouge == true)
+        {
+            Console.WriteLine("");
+            Console.WriteLine("Press Enter to Continue...");
+            string contDialouge = Console.ReadLine();
+            if (contDialouge == "")
+            {
+                pauseDialouge = false;
+            }
+        }
+
+        Console.WriteLine("Vernon (You): “I see the way down, hold on!”");
+
+        pauseDialouge = true;
+        while (pauseDialouge == true)
+        {
+            Console.WriteLine("");
+            Console.WriteLine("Press Enter to Continue...");
+            string contDialouge = Console.ReadLine();
+            if (contDialouge == "")
+            {
+                pauseDialouge = false;
+            }
+        }
+
+        Console.WriteLine("A loud crash shakes the buggy and you hear a guttural cry to your right. You turn your head just " +
+                          "in time to see a Vulture carrying Morrison away up into the air. He screams in terror as he’s " +
+                          "tossed between the Vultures. They all take turns tearing him apart, blood raining from the sky as " +
+                          "his maimed body splatters on the ground. A grotesque thud is heard. You book it down the Mountain, " +
+                          "the downward slope adding extra speed to the buggy’s descent. As you reach the base of the " +
+                          "Mountain, you see the fleeing vehicle just ahead resting at a cliffside. They seemed to have run " +
+                          "out of fuel.");
+
+        morrisonDead = true;
+        pauseDialouge = true;
+        while (pauseDialouge == true)
+        {
+            Console.WriteLine("");
+            Console.WriteLine("Press Enter to Continue...");
+            string contDialouge = Console.ReadLine();
+            if (contDialouge == "")
+            {
+                pauseDialouge = false;
+            }
+        }
+
+        Console.WriteLine("BANDIT WORSLEY: “Bastards are done now! Let’s finish ‘em off!”");
+    }
+    // This is the dialouge for Choice 2B in Choice 1A or Choice 1B
+    else if (choiceOneA == true || choiceOneB == true && choiceTwoB == true)
+    {
+        Console.WriteLine("");
+        Console.WriteLine("Going straight into the Valley you eventually find the fleeing vehicle just up ahead, the cracks " +
+                          "in the shield slowly repairing itself. Morrison and Worsley rain hellfire once again upon the " +
+                          "fleeing vehicle.");
+
+        pauseDialouge = true;
+        while (pauseDialouge == true)
+        {
+            Console.WriteLine("");
+            Console.WriteLine("Press Enter to Continue...");
+            string contDialouge = Console.ReadLine();
+            if (contDialouge == "")
+            {
+                pauseDialouge = false;
+            }
+        }
+
+        Console.WriteLine("BANDIT MORRISON: “We ain’t gonna get nowhere like this! Oi V, you can multi-task can’t you? Get " +
+                          "your gun out and help us break that damn shield, oh and try not to crash us!”");
+
+        pauseDialouge = true;
+        while (pauseDialouge == true)
+        {
+            Console.WriteLine("");
+            Console.WriteLine("Press Enter to Continue...");
+            string contDialouge = Console.ReadLine();
+            if (contDialouge == "")
+            {
+                pauseDialouge = false;
+            }
+        }
+
+        Console.WriteLine("Dangerously multi-tasking between driving, dodging barrages of bullets and explosives, and firing " +
+                          "at the fleeing vehicle ahead of you, you managed to nail a hit on the fleeing vehicle’s fuel line " +
+                          "causing them to lose fuel and leading to them slowing down significantly until they eventually are " +
+                          "forced to stop at a cliffside.");
+
+        pauseDialouge = true;
+        while (pauseDialouge == true)
+        {
+            Console.WriteLine("");
+            Console.WriteLine("Press Enter to Continue...");
+            string contDialouge = Console.ReadLine();
+            if (contDialouge == "")
+            {
+                pauseDialouge = false;
+            }
+        }
+
+        Console.WriteLine("BANDIT MORRISON: “Hah! They’ve got nowhere to run to now! Time to end this!”");
+    }
+    // This is the Third and Final Decision the Player can make
+    choice = true;
+    while (choice == true)
+    {
+        Console.WriteLine("");
+        Console.WriteLine("Enter in the Corresponding Number to continue...");
+        Console.WriteLine("");
+        Console.WriteLine("[1] Ram them off the Cliffside");
+        Console.WriteLine("[2] Stop the car and fight them");
+        int choiceThree = int.Parse(Console.ReadLine());
+        if (choiceThree == 1)
+        {
+            choiceThreeA = true;
+            choice = false;
+        }
+        else if (choiceThree == 2)
+        {
+            choiceThreeB = true;
+            choice = false;
+        }
+    }
+    // This is the dialouge for Choice 3A
+    if (choiceThreeA == true)
+    {
+        Console.WriteLine("");
+        Console.WriteLine("You ram the car sending both you and the fleeing bandits straight off the cliffside.");
+
+        vernonDead = true;
+    }
+    // This is the dialouge for Choice 3B
+    else if (choiceThreeB == true)
+    {
+        // Checks if Morrison is dead from Choice 2A in Choice 1B
+        if (morrisonDead == true)
+        {
+            Console.WriteLine("");
+            Console.WriteLine("After an extensive firefight between you and the enemy bandits, you managed to clear them out " +
+                              "with Worsley's help on the gatling turret. In the aftermath of the battle, Worsley begins to " +
+                              "re-loot the supplies they stole before.");
+
+            pauseDialouge = true;
+            while (pauseDialouge == true)
+            {
+                Console.WriteLine("");
+                Console.WriteLine("Press Enter to Continue...");
+                string contDialouge = Console.ReadLine();
+                if (contDialouge == "")
+                {
+                    pauseDialouge = false;
+                }
+            }
+
+            Console.WriteLine("BANDIT WORSLEY: “What’s this? When did we loot this?”");
+
+            pauseDialouge = true;
+            while (pauseDialouge == true)
+            {
+                Console.WriteLine("");
+                Console.WriteLine("Press Enter to Continue...");
+                string contDialouge = Console.ReadLine();
+                if (contDialouge == "")
+                {
+                    pauseDialouge = false;
+                }
+            }
+
+            Console.WriteLine("Worsley opens up the half-open trunk revealing the specimen. Your eyes widen in recognition " +
+                              "and you rush over.");
+        }
+        // If Morrison is still alive or Worsley is dead from Choice 2A in Choice 1A
+        else if (worsleyDead == true)
+        {
+            Console.WriteLine("");
+            Console.WriteLine("After an extensive firefight between you and the enemy bandits, you managed to clear them out " +
+                              "with Morrison's expert aim. In the aftermath of the battle, Morrison begins to re-loot the " +
+                              "supplies they stole before.");
+
+            pauseDialouge = true;
+            while (pauseDialouge == true)
+            {
+                Console.WriteLine("");
+                Console.WriteLine("Press Enter to Continue...");
+                string contDialouge = Console.ReadLine();
+                if (contDialouge == "")
+                {
+                    pauseDialouge = false;
+                }
+            }
+
+            Console.WriteLine("BANDIT MORRISON “Huh? I don’t remember looting this.”");
+
+            pauseDialouge = true;
+            while (pauseDialouge == true)
+            {
+                Console.WriteLine("");
+                Console.WriteLine("Press Enter to Continue...");
+                string contDialouge = Console.ReadLine();
+                if (contDialouge == "")
+                {
+                    pauseDialouge = false;
+                }
+            }
+
+            Console.WriteLine("Morrison opens up the half-open trunk revealing the specimen. Your eyes widen in recognition " +
+                              "and you rush over.");
+
+            pauseDialouge = true;
+            while (pauseDialouge == true)
+            {
+                Console.WriteLine("");
+                Console.WriteLine("Press Enter to Continue...");
+                string contDialouge = Console.ReadLine();
+                if (contDialouge == "")
+                {
+                    pauseDialouge = false;
+                }
+            }
+
+            Console.WriteLine("VERNON (YOU): “What have you done, where are we!?”");
+
+            pauseDialouge = true;
+            while (pauseDialouge == true)
+            {
+                Console.WriteLine("");
+                Console.WriteLine("Press Enter to Continue...");
+                string contDialouge = Console.ReadLine();
+                if (contDialouge == "")
+                {
+                    pauseDialouge = false;
+                }
+            }
+        }
+        else if (morrisonDead == false && worsleyDead == false)
+        {
+            Console.WriteLine("");
+            Console.WriteLine("After an extensive firefight between you and the enemy bandits, you managed to clear them out " +
+                              "with Morrison's expert aim and Worsley's help on the gatling turret. In the aftermath of the " +
+                              "battle, Morrison and Worsley begins to re-loot the supplies they stole before.");
+
+            pauseDialouge = true;
+            while (pauseDialouge == true)
+            {
+                Console.WriteLine("");
+                Console.WriteLine("Press Enter to Continue...");
+                string contDialouge = Console.ReadLine();
+                if (contDialouge == "")
+                {
+                    pauseDialouge = false;
+                }
+            }
+
+            Console.WriteLine("BANDIT MORRISON “Huh? I don’t remember looting this.”");
+
+            pauseDialouge = true;
+            while (pauseDialouge == true)
+            {
+                Console.WriteLine("");
+                Console.WriteLine("Press Enter to Continue...");
+                string contDialouge = Console.ReadLine();
+                if (contDialouge == "")
+                {
+                    pauseDialouge = false;
+                }
+            }
+
+            Console.WriteLine("Morrison opens up the half-open trunk revealing the specimen. Your eyes widen in recognition " +
+                              "and you rush over.");
+
+            pauseDialouge = true;
+            while (pauseDialouge == true)
+            {
+                Console.WriteLine("");
+                Console.WriteLine("Press Enter to Continue...");
+                string contDialouge = Console.ReadLine();
+                if (contDialouge == "")
+                {
+                    pauseDialouge = false;
+                }
+            }
+
+            Console.WriteLine("VERNON (YOU): “What have you done, where are we!?”");
+
+            pauseDialouge = true;
+            while (pauseDialouge == true)
+            {
+                Console.WriteLine("");
+                Console.WriteLine("Press Enter to Continue...");
+                string contDialouge = Console.ReadLine();
+                if (contDialouge == "")
+                {
+                    pauseDialouge = false;
+                }
+            }
+        }
+
+        if (morrisonDead == true)
+        {
+            Console.WriteLine("The specimen screeches causing you and Worsley to hold your heads in pain. The eerie purple glow " +
+                              "from before appears around the specimen again as it floats up several feet in the air. Particles " +
+                              "begin eating away at your surroundings like before until you once again find yourself being pulled " +
+                              "into the vortex.");
+        }
+        else if (worsleyDead == true)
+        {
+            Console.WriteLine("The specimen screeches causing you and Morrison to hold your heads in pain. The eerie purple glow " +
+                              "from before appears around the specimen again as it floats up several feet in the air. Particles " +
+                              "begin eating away at your surroundings like before until you once again find yourself being pulled " +
+                              "into the vortex.");
+        }
+        else
+        {
+            Console.WriteLine("The specimen screeches causing you, Morrison and Worsley to hold your heads in pain. The eerie " +
+                              "purple glow from before appears around the specimen again as it floats up several feet in the air. " +
+                              "Particles begin eating away at your surroundings like before until you once again find yourself " +
+                              "being pulled into the vortex.");
+        }
+    }
+    else if (choiceStoryFive == true) // Storyline 5 - Bent Reality
+    {
+
+    }
+    // The Player returns back to the Facility
+    // Endings based on who is alive, dead or missing
+    // This Ending depends on if Veron died in the alternate reality
+    Console.WriteLine("");
+    if (vernonDead == true)
+    {
+        Console.WriteLine("After the vortex consumed Vernon, it disappeared. Sgt. Morrison immediately called SPC Worsley for " +
+                          "backup. When the detachment arrives, they investigate surrounding area, looking for Vernon. But they " +
+                          "never found him. People have begun to report that they sometimes see something in the corner of their " +
+                          "eye, some sort of shadowy figure. It almost looks like Vernon... Almost.");
+    }
+    // This Ending depends on if Worsley & Morrison is missing
+    else if (vernonDead == false && morrisonMissing == true && worsleyMissing == true)
+    {
+        Console.WriteLine("As you return back to the facility, you look around disoriented. You exit the room and head towards " +
+                          "Sickbay. On the way you pass by the Security Checkpoint where Worsley should be stationed.");
+
+        pauseDialouge = true;
+        while (pauseDialouge == true)
+        {
+            Console.WriteLine("");
+            Console.WriteLine("Press Enter to Continue...");
+            string contDialouge = Console.ReadLine();
+            if (contDialouge == "")
+            {
+                pauseDialouge = false;
+            }
+        }
+
+        Console.WriteLine("VERNON (YOU): “Where is everybody?”");
+
+        pauseDialouge = true;
+        while (pauseDialouge == true)
+        {
+            Console.WriteLine("");
+            Console.WriteLine("Press Enter to Continue...");
+            string contDialouge = Console.ReadLine();
+            if (contDialouge == "")
+            {
+                pauseDialouge = false;
+            }
+        }
+
+        Console.WriteLine("As you continued looking around the Facility, you can't seem to find anybody... Is something watching you?");
+    }
+    // This Ending depends on if Morrison is missing
+    else if (vernonDead == false && morrisonMissing == true && worsleyMissing == false)
+    {
+        Console.WriteLine("As you return back to the facility, you look around disoriented. You exit the room and head towards " +
+                          "Sickbay. On the way you pass by the Security Checkpoint where Worsley is stationed.");
+
+        pauseDialouge = true;
+        while (pauseDialouge == true)
+        {
+            Console.WriteLine("");
+            Console.WriteLine("Press Enter to Continue...");
+            string contDialouge = Console.ReadLine();
+            if (contDialouge == "")
+            {
+                pauseDialouge = false;
+            }
+        }
+
+        Console.WriteLine("SPC WORSLEY: “Is everything alright!? I heard the alarm go off and I was about to call in a " +
+                          "detachment.”");
+        Console.WriteLine("VERNON (YOU): “I had an.. Experience with the specimen, I’m going to Sickbay for a deep analysis.”");
+        Console.WriteLine("SPC WORSLEY: “What do you mean by experience?”");
+        Console.WriteLine("VERNON (YOU): “I'll talk about it later, right now I need to make sure I'm not affected by the specimen " +
+                          "in any way shape or form. By the way, where's Morrison?”");
+        Console.WriteLine("SPC WORSLEY: “... Who's Morrison?”");
+    }
+    // This Ending depends on if Worsley is missing
+    else if (vernonDead == false && morrisonMissing == false && worsleyMissing == true)
+    {
+        Console.WriteLine("As you return back to the facility, you look around disoriented. Morrison grabs you by the shoulder.");
+
+        pauseDialouge = true;
+        while (pauseDialouge == true)
+        {
+            Console.WriteLine("");
+            Console.WriteLine("Press Enter to Continue...");
+            string contDialouge = Console.ReadLine();
+            if (contDialouge == "")
+            {
+                pauseDialouge = false;
+            }
+        }
+
+        Console.WriteLine("SGT. MORRISON: “Hey, are you alright? You’ve been staring at the specimen for a while now.”");
+        Console.WriteLine("VERNON (YOU): “I don’t know… I was just in some sort of alternate reality I think? My head kind of " +
+                          "hurts…”");
+        Console.WriteLine("SGT. MORRISON: “Alright come with me, we need to get you to sickbay for a checkup, you know the drill.”");
+
+        pauseDialouge = true;
+        while (pauseDialouge == true)
+        {
+            Console.WriteLine("");
+            Console.WriteLine("Press Enter to Continue...");
+            string contDialouge = Console.ReadLine();
+            if (contDialouge == "")
+            {
+                pauseDialouge = false;
+            }
+        }
+
+        Console.WriteLine("Both of you exit the room and head towards Sickbay. On the way you pass by the Security Checkpoint " +
+                          "where should Worsley be stationed.");
+
+        pauseDialouge = true;
+        while (pauseDialouge == true)
+        {
+            Console.WriteLine("");
+            Console.WriteLine("Press Enter to Continue...");
+            string contDialouge = Console.ReadLine();
+            if (contDialouge == "")
+            {
+                pauseDialouge = false;
+            }
+        }
+
+        Console.WriteLine("VERNON (YOU): “Wait, where’s Worsley?”");
+        Console.WriteLine("SGT. MORRISON: “... You mean SPC Whitney?”");
+    }
+    // This Ending depends on if Worsley & Morrison is present
     else
     {
-        Console.WriteLine("Approaching the end of the hallway, your headache starts feeling a bit worse. As you round the " +
-                          "corner, you thought you heard somebody whisper your name… Was that your voice?");
+        Console.WriteLine("");
+        Console.WriteLine("As you return back to the facility, you look around disoriented. Morrison grabs you by the shoulder.");
+
+        pauseDialouge = true;
+        while (pauseDialouge == true)
+        {
+            Console.WriteLine("");
+            Console.WriteLine("Press Enter to Continue...");
+            string contDialouge = Console.ReadLine();
+            if (contDialouge == "")
+            {
+                pauseDialouge = false;
+            }
+        }
+
+        Console.WriteLine("Sgt. Morrison: “Hey, are you alright? You’ve been staring at the specimen for a while now.”");
+        Console.WriteLine("Vernon (You): “I don’t know… I was just in some sort of alternate reality I think? My head kind of " +
+                          "hurts…”");
+        Console.WriteLine("Sgt. Morrison: “Alright come with me, we need to get you to sickbay for a checkup, you know the drill.”");
+
+        pauseDialouge = true;
+        while (pauseDialouge == true)
+        {
+            Console.WriteLine("");
+            Console.WriteLine("Press Enter to Continue...");
+            string contDialouge = Console.ReadLine();
+            if (contDialouge == "")
+            {
+                pauseDialouge = false;
+            }
+        }
+
+        Console.WriteLine("Both of you exit the room and head towards Sickbay. On the way you pass by the Security Checkpoint " +
+                          "where Worsley is stationed.");
+
+        pauseDialouge = true;
+        while (pauseDialouge == true)
+        {
+            Console.WriteLine("");
+            Console.WriteLine("Press Enter to Continue...");
+            string contDialouge = Console.ReadLine();
+            if (contDialouge == "")
+            {
+                pauseDialouge = false;
+            }
+        }
+
+        Console.WriteLine("Specialist Worsley: “Is everything alright!? I heard the alarm go off and I was about to call in a " +
+                          "detachment.”");
+        Console.WriteLine("Sgt. Morrison: “Vernon had an experience with the specimen, I’m taking him to Sickbay for a deep " +
+                          "analysis.”");
+        Console.WriteLine("Specialist Worsley: “What do you mean by experience?”");
+        Console.WriteLine("Sgt. Morrison: “We’ll talk about it later, right now making sure Vernon isn’t affected by the specimen " +
+                          "is more important.”");
+
+        pauseDialouge = true;
+        while (pauseDialouge == true)
+        {
+            Console.WriteLine("");
+            Console.WriteLine("Press Enter to Continue...");
+            string contDialouge = Console.ReadLine();
+            if (contDialouge == "")
+            {
+                pauseDialouge = false;
+            }
+        }
+        // Endings based on who is alive
+        // This Ending depends on if Worsley is died in the alternate reality
+        if (worsleyDead == true)
+        {
+            Console.WriteLine("Approaching the end of the hallway, the images of Worsley’s horrible mutilation as he died " +
+                              "tragically in the alternate reality comes back to mind. As you round the corner and look at " +
+                              "Worsley one last time, you notice something… Weren’t Worsley’s eyes blue?");
+        }
+        // This Ending depends on if Morrison is died in the alternate reality
+        else if (morrisonDead == true)
+        {
+            Console.WriteLine("Approaching the end of the hallway, the sound of Morrison’s haunting screams as he died tragically " +
+                              "in the alternate reality echo in your ear. As you arrive at Sickbay and watch as Morrison leaves, " +
+                              "you notice something… Where did Morrison’s scar go?");
+        }
+        // This Ending depends on if both Worsley & Morrison survived the alternate reality
+        else
+        {
+            Console.WriteLine("Approaching the end of the hallway, your headache starts feeling a bit worse. As you round the " +
+                              "corner, you thought you heard somebody whisper your name… Was that your voice?");
+        }
     }
 }
