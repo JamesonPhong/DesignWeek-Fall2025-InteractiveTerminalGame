@@ -365,7 +365,9 @@ bool choiceTwoB = false;
 bool choiceThreeA = false;
 bool choiceThreeB = false;
 bool worsleyDead = false;
+bool worsleyMissing = false;
 bool morrisonDead = false;
+bool morrisonMissing = false;
 bool vernonDead = false;
 while (choice == true)
 {
@@ -595,78 +597,8 @@ if (choiceStoryOne == true) // Storyline 1 - Abandoned House
             }
         }
     }
-    // Storyline 1 - Abandoned House Choices 2A Outcomes
-    if (choiceOneA == true || choiceOneB == true && choiceTwoA == true)
-    {
-        Console.WriteLine("");
-        Console.WriteLine("You attempt to open the door but find out it’s been locked.");
-
-        pauseDialouge = true;
-        while (pauseDialouge == true)
-        {
-            Console.WriteLine("");
-            Console.WriteLine("Press Enter to Continue...");
-            string contDialouge = Console.ReadLine();
-            if (contDialouge == "")
-            {
-                pauseDialouge = false;
-            }
-        }
-
-        Console.WriteLine("VERNON (YOU): “Crap”");
-
-        pauseDialouge = true;
-        while (pauseDialouge == true)
-        {
-            Console.WriteLine("");
-            Console.WriteLine("Press Enter to Continue...");
-            string contDialouge = Console.ReadLine();
-            if (contDialouge == "")
-            {
-                pauseDialouge = false;
-            }
-        }
-
-        Console.WriteLine("In your vulnerable position, the monster you snuck past earlier notices you and approaches you while " +
-                          "growling heavily. You hear the growling and just barely manage to escape the monster’s grasp and kill " +
-                          "it.");
-
-        pauseDialouge = true;
-        while (pauseDialouge == true)
-        {
-            Console.WriteLine("");
-            Console.WriteLine("Press Enter to Continue...");
-            string contDialouge = Console.ReadLine();
-            if (contDialouge == "")
-            {
-                pauseDialouge = false;
-            }
-        }
-
-        Console.WriteLine("VERNON (YOU): “Jesus, what the fuck was that?”");
-
-        pauseDialouge = true;
-        while (pauseDialouge == true)
-        {
-            Console.WriteLine("");
-            Console.WriteLine("Press Enter to Continue...");
-            string contDialouge = Console.ReadLine();
-            if (contDialouge == "")
-            {
-                pauseDialouge = false;
-            }
-        }
-
-        Console.WriteLine("The monster drops something after seemingly melting into the floor. You investigate and discover that " +
-                          "it's the specimen that brought you here. Just as you were about to pick it up, it begins glowing and " +
-                          "levitating again, letting out that horrible screeching noise. You clutch your head in pain before " +
-                          "feeling yourself once again being pulled into a vortex.");
-
-        worsleyDead = true;
-        morrisonDead = true;
-    }
     // Storyline 1 - Abandoned House Choices 2B from Choice 1A Outcomes
-    else if (choiceOneA == true && choiceTwoB == true)
+    if (choiceOneA == true && choiceTwoB == true)
     {
         Console.WriteLine("");
         Console.WriteLine("You decide to check out the kitchen where you find the Sergeant tied up to the table!");
@@ -734,58 +666,128 @@ if (choiceStoryOne == true) // Storyline 1 - Abandoned House
                           "levitating above a table before letting out that ear-piercing screech once more. You and Morrison " +
                           "hold your heads before being pulled into a vortex again.");
 
-        worsleyDead = true;
+        worsleyMissing = true;
     }
     // Storyline 1 - Abandoned House Choices 2B from Choice 1B Outcomes
     else if (choiceOneB == true && choiceTwoB == true)
     {
         Console.WriteLine("");
         Console.WriteLine("You enter the basement and see Worsley locked in a moldy cell, he looks like he’s been roughed up.");
-    }
 
-    pauseDialouge = true;
-    while (pauseDialouge == true)
+        pauseDialouge = true;
+        while (pauseDialouge == true)
+        {
+            Console.WriteLine("");
+            Console.WriteLine("Press Enter to Continue...");
+            string contDialouge = Console.ReadLine();
+            if (contDialouge == "")
+            {
+                pauseDialouge = false;
+            }
+        }
+
+        Console.WriteLine("VERNON (YOU): “Worsley!? Is that you?”");
+        Console.WriteLine("SPC WORSLEY: “Oh my god Vernon! I didn’t think you survived, I have no idea where I am or how I got here. " +
+                          "You gotta help me get outta this thing!”");
+        Console.WriteLine("VERNON (YOU): “Who would I be if I didn't help out a friend? Do you know where I could maybe find a key?”");
+        Console.WriteLine("SPC WORSLEY: “No, I’m afraid I don’t, maybe try looki-”");
+        Console.WriteLine("");
+        Console.WriteLine("Worsley stops himself when he hears a low rumbling sound approaching.");
+        Console.WriteLine("");
+        Console.WriteLine("VERNON (YOU): “Aw shit, and here I was thinking I got away from the bastard”");
+
+        pauseDialouge = true;
+        while (pauseDialouge == true)
+        {
+            Console.WriteLine("");
+            Console.WriteLine("Press Enter to Continue...");
+            string contDialouge = Console.ReadLine();
+            if (contDialouge == "")
+            {
+                pauseDialouge = false;
+            }
+        }
+
+        Console.WriteLine("The monster creeps down the stairs and gets ready to finish the two of you off. You managed to hide and " +
+                          "ambush it, kill the monster swiftly by electrocuting it to death with your Stun Baton. It drops a key out " +
+                          "of its mouth as it wails in pain. You use the key to unlock Worsley’s cell and the two of you escape " +
+                          "through the air vent, making your way outside the house. Both of you notice a purple glow in the nearby " +
+                          "shed and investigate. As you enter, you find the specimen levitating above a table before letting out " +
+                          "that ear-piercing screech once more. You and Worsley hold your heads before being pulled into a vortex " +
+                          "again.");
+
+        morrisonMissing = true;
+    }
+    // Storyline 1 - Abandoned House Choices 2A Outcomes
+    else if (choiceOneA == true || choiceOneB == true && choiceTwoA == true)
     {
         Console.WriteLine("");
-        Console.WriteLine("Press Enter to Continue...");
-        string contDialouge = Console.ReadLine();
-        if (contDialouge == "")
+        Console.WriteLine("You attempt to open the door but find out it’s been locked.");
+
+        pauseDialouge = true;
+        while (pauseDialouge == true)
         {
-            pauseDialouge = false;
+            Console.WriteLine("");
+            Console.WriteLine("Press Enter to Continue...");
+            string contDialouge = Console.ReadLine();
+            if (contDialouge == "")
+            {
+                pauseDialouge = false;
+            }
         }
-    }
 
-    Console.WriteLine("VERNON (YOU): “Worsley!? Is that you?”");
-    Console.WriteLine("SPC WORSLEY: “Oh my god Vernon! I didn’t think you survived, I have no idea where I am or how I got here. " +
-                      "You gotta help me get outta this thing!”");
-    Console.WriteLine("VERNON (YOU): “Who would I be if I didn't help out a friend? Do you know where I could maybe find a key?”");
-    Console.WriteLine("SPC WORSLEY: “No, I’m afraid I don’t, maybe try looki-”");
-    Console.WriteLine("");
-    Console.WriteLine("Worsley stops himself when he hears a low rumbling sound approaching.");
-    Console.WriteLine("");
-    Console.WriteLine("VERNON (YOU): “Aw shit, and here I was thinking I got away from the bastard”");
+        Console.WriteLine("VERNON (YOU): “Crap”");
 
-    pauseDialouge = true;
-    while (pauseDialouge == true)
-    {
-        Console.WriteLine("");
-        Console.WriteLine("Press Enter to Continue...");
-        string contDialouge = Console.ReadLine();
-        if (contDialouge == "")
+        pauseDialouge = true;
+        while (pauseDialouge == true)
         {
-            pauseDialouge = false;
+            Console.WriteLine("");
+            Console.WriteLine("Press Enter to Continue...");
+            string contDialouge = Console.ReadLine();
+            if (contDialouge == "")
+            {
+                pauseDialouge = false;
+            }
         }
+
+        Console.WriteLine("In your vulnerable position, the monster you snuck past earlier notices you and approaches you while " +
+                          "growling heavily. You hear the growling and just barely manage to escape the monster’s grasp and kill " +
+                          "it.");
+
+        pauseDialouge = true;
+        while (pauseDialouge == true)
+        {
+            Console.WriteLine("");
+            Console.WriteLine("Press Enter to Continue...");
+            string contDialouge = Console.ReadLine();
+            if (contDialouge == "")
+            {
+                pauseDialouge = false;
+            }
+        }
+
+        Console.WriteLine("VERNON (YOU): “Jesus, what the fuck was that?”");
+
+        pauseDialouge = true;
+        while (pauseDialouge == true)
+        {
+            Console.WriteLine("");
+            Console.WriteLine("Press Enter to Continue...");
+            string contDialouge = Console.ReadLine();
+            if (contDialouge == "")
+            {
+                pauseDialouge = false;
+            }
+        }
+
+        Console.WriteLine("The monster drops something after seemingly melting into the floor. You investigate and discover that " +
+                          "it's the specimen that brought you here. Just as you were about to pick it up, it begins glowing and " +
+                          "levitating again, letting out that horrible screeching noise. You clutch your head in pain before " +
+                          "feeling yourself once again being pulled into a vortex.");
+
+        worsleyMissing = true;
+        morrisonMissing = true;
     }
-
-    Console.WriteLine("The monster creeps down the stairs and gets ready to finish the two of you off. You managed to hide and " +
-                      "ambush it, kill the monster swiftly by electrocuting it to death with your Stun Baton. It drops a key out " +
-                      "of its mouth as it wails in pain. You use the key to unlock Worsley’s cell and the two of you escape " +
-                      "through the air vent, making your way outside the house. Both of you notice a purple glow in the nearby " +
-                      "shed and investigate. As you enter, you find the specimen levitating above a table before letting out " +
-                      "that ear-piercing screech once more. You and Worsley hold your heads before being pulled into a vortex " +
-                      "again.");
-
-    morrisonDead = true;
 }
 else if (choiceStoryTwo == true) // Storyline 2 - Mutant City
 {
@@ -802,4 +804,218 @@ else if (choiceStoryFour == true) // Storyline 4 - The Wasteland
 else if (choiceStoryFive == true) // Storyline 5 - Bent Reality
 {
 
+}
+// The Player returns back to the Facility
+// Endings based on who is alive, dead or missing
+// This Ending depends on if Veron died in the alternate reality
+Console.WriteLine("");
+if (vernonDead == true)
+{
+    Console.WriteLine("After the vortex consumed Vernon, it disappeared. Sgt. Morrison immediately called SPC Worsley for " +
+                      "backup. When the detachment arrives, they investigate surrounding area, looking for Vernon. But they " +
+                      "never found him. People have begun to report that they sometimes see something in the corner of their " +
+                      "eye, some sort of shadowy figure. It almost looks like Vernon... Almost.");
+}
+// This Ending depends on if Worsley & Morrison is missing
+else if (vernonDead == false && morrisonMissing == true && worsleyMissing == true)
+{
+    Console.WriteLine("As you return back to the facility, you look around disoriented. You exit the room and head towards " +
+                      "Sickbay. On the way you pass by the Security Checkpoint where Worsley should be stationed.");
+
+    pauseDialouge = true;
+    while (pauseDialouge == true)
+    {
+        Console.WriteLine("");
+        Console.WriteLine("Press Enter to Continue...");
+        string contDialouge = Console.ReadLine();
+        if (contDialouge == "")
+        {
+            pauseDialouge = false;
+        }
+    }
+
+    Console.WriteLine("VERNON (YOU): “Where is everybody?”");
+
+    pauseDialouge = true;
+    while (pauseDialouge == true)
+    {
+        Console.WriteLine("");
+        Console.WriteLine("Press Enter to Continue...");
+        string contDialouge = Console.ReadLine();
+        if (contDialouge == "")
+        {
+            pauseDialouge = false;
+        }
+    }
+
+    Console.WriteLine("As you continued looking around the Facility, you can't seem to find anybody... Is something watching you?");
+}
+// This Ending depends on if Morrison is missing
+else if (vernonDead == false && morrisonMissing == true && worsleyMissing == false)
+{
+    Console.WriteLine("As you return back to the facility, you look around disoriented. You exit the room and head towards " +
+                      "Sickbay. On the way you pass by the Security Checkpoint where Worsley is stationed.");
+
+    pauseDialouge = true;
+    while (pauseDialouge == true)
+    {
+        Console.WriteLine("");
+        Console.WriteLine("Press Enter to Continue...");
+        string contDialouge = Console.ReadLine();
+        if (contDialouge == "")
+        {
+            pauseDialouge = false;
+        }
+    }
+
+    Console.WriteLine("SPC WORSLEY: “Is everything alright!? I heard the alarm go off and I was about to call in a " +
+                      "detachment.”");
+    Console.WriteLine("VERNON (YOU): “I had an.. Experience with the specimen, I’m going to Sickbay for a deep analysis.”");
+    Console.WriteLine("SPC WORSLEY: “What do you mean by experience?”");
+    Console.WriteLine("VERNON (YOU): “I'll talk about it later, right now I need to make sure I'm not affected by the specimen " +
+                      "in any way shape or form. By the way, where's Morrison?”");
+    Console.WriteLine("SPC WORSLEY: “... Who's Morrison?”");
+}
+// This Ending depends on if Worsley is missing
+else if (vernonDead == false && morrisonMissing == false && worsleyMissing == true)
+{
+    Console.WriteLine("As you return back to the facility, you look around disoriented. Morrison grabs you by the shoulder.");
+
+    pauseDialouge = true;
+    while (pauseDialouge == true)
+    {
+        Console.WriteLine("");
+        Console.WriteLine("Press Enter to Continue...");
+        string contDialouge = Console.ReadLine();
+        if (contDialouge == "")
+        {
+            pauseDialouge = false;
+        }
+    }
+
+    Console.WriteLine("SGT. MORRISON: “Hey, are you alright? You’ve been staring at the specimen for a while now.”");
+    Console.WriteLine("VERNON (YOU): “I don’t know… I was just in some sort of alternate reality I think? My head kind of " +
+                      "hurts…”");
+    Console.WriteLine("SGT. MORRISON: “Alright come with me, we need to get you to sickbay for a checkup, you know the drill.”");
+
+    pauseDialouge = true;
+    while (pauseDialouge == true)
+    {
+        Console.WriteLine("");
+        Console.WriteLine("Press Enter to Continue...");
+        string contDialouge = Console.ReadLine();
+        if (contDialouge == "")
+        {
+            pauseDialouge = false;
+        }
+    }
+
+    Console.WriteLine("Both of you exit the room and head towards Sickbay. On the way you pass by the Security Checkpoint " +
+                      "where should Worsley be stationed.");
+
+    pauseDialouge = true;
+    while (pauseDialouge == true)
+    {
+        Console.WriteLine("");
+        Console.WriteLine("Press Enter to Continue...");
+        string contDialouge = Console.ReadLine();
+        if (contDialouge == "")
+        {
+            pauseDialouge = false;
+        }
+    }
+
+    Console.WriteLine("VERNON (YOU): “Wait, where’s Worsley?”");
+    Console.WriteLine("SGT. MORRISON: “... You mean SPC Whitney?”");
+}
+// This Ending depends on if Worsley & Morrison is present
+else
+{
+    Console.WriteLine("");
+    Console.WriteLine("As you return back to the facility, you look around disoriented. Morrison grabs you by the shoulder.");
+
+    pauseDialouge = true;
+    while (pauseDialouge == true)
+    {
+        Console.WriteLine("");
+        Console.WriteLine("Press Enter to Continue...");
+        string contDialouge = Console.ReadLine();
+        if (contDialouge == "")
+        {
+            pauseDialouge = false;
+        }
+    }
+
+    Console.WriteLine("Sgt. Morrison: “Hey, are you alright? You’ve been staring at the specimen for a while now.”");
+    Console.WriteLine("Vernon (You): “I don’t know… I was just in some sort of alternate reality I think? My head kind of " +
+                      "hurts…”");
+    Console.WriteLine("Sgt. Morrison: “Alright come with me, we need to get you to sickbay for a checkup, you know the drill.”");
+
+    pauseDialouge = true;
+    while (pauseDialouge == true)
+    {
+        Console.WriteLine("");
+        Console.WriteLine("Press Enter to Continue...");
+        string contDialouge = Console.ReadLine();
+        if (contDialouge == "")
+        {
+            pauseDialouge = false;
+        }
+    }
+
+    Console.WriteLine("Both of you exit the room and head towards Sickbay. On the way you pass by the Security Checkpoint " +
+                      "where Worsley is stationed.");
+
+    pauseDialouge = true;
+    while (pauseDialouge == true)
+    {
+        Console.WriteLine("");
+        Console.WriteLine("Press Enter to Continue...");
+        string contDialouge = Console.ReadLine();
+        if (contDialouge == "")
+        {
+            pauseDialouge = false;
+        }
+    }
+
+    Console.WriteLine("Specialist Worsley: “Is everything alright!? I heard the alarm go off and I was about to call in a " +
+                      "detachment.”");
+    Console.WriteLine("Sgt. Morrison: “Vernon had an experience with the specimen, I’m taking him to Sickbay for a deep " +
+                      "analysis.”");
+    Console.WriteLine("Specialist Worsley: “What do you mean by experience?”");
+    Console.WriteLine("Sgt. Morrison: “We’ll talk about it later, right now making sure Vernon isn’t affected by the specimen " +
+                      "is more important.”");
+
+    pauseDialouge = true;
+    while (pauseDialouge == true)
+    {
+        Console.WriteLine("");
+        Console.WriteLine("Press Enter to Continue...");
+        string contDialouge = Console.ReadLine();
+        if (contDialouge == "")
+        {
+            pauseDialouge = false;
+        }
+    }
+    // Endings based on who is alive
+    // This Ending depends on if Worsley is died in the alternate reality
+    if (worsleyDead == true)
+    {
+        Console.WriteLine("Approaching the end of the hallway, the images of Worsley’s horrible mutilation as he died " +
+                          "tragically in the alternate reality comes back to mind. As you round the corner and look at " +
+                          "Worsley one last time, you notice something… Weren’t Worsley’s eyes blue?");
+    }
+    // This Ending depends on if Morrison is died in the alternate reality
+    else if (morrisonDead == true)
+    {
+        Console.WriteLine("Approaching the end of the hallway, the sound of Morrison’s haunting screams as he died tragically " +
+                          "in the alternate reality echo in your ear. As you arrive at Sickbay and watch as Morrison leaves, " +
+                          "you notice something… Where did Morrison’s scar go?");
+    }
+    // This Ending depends on if both Worsley & Morrison survived the alternate reality
+    else
+    {
+        Console.WriteLine("Approaching the end of the hallway, your headache starts feeling a bit worse. As you round the " +
+                          "corner, you thought you heard somebody whisper your name… Was that your voice?");
+    }
 }
