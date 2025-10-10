@@ -357,8 +357,6 @@ bool choice = true;
 bool choiceStoryOne = false;
 bool choiceStoryTwo = false;
 bool choiceStoryThree = false;
-bool choiceStoryFour = false;
-bool choiceStoryFive = false;
 bool choiceOneA = false;
 bool choiceOneB = false;
 bool choiceOneC = false;
@@ -387,10 +385,8 @@ while (choice == true)
     Console.WriteLine("Enter in the Corresponding Number to continue...");
     Console.WriteLine("");
     Console.WriteLine("[1] KA-BAR Stun Baton (Leads you to Storyline 1)");
-    Console.WriteLine("[2] KA-Bar Combat Knife (Leads you to Storyline 2)");
-    Console.WriteLine("[3] Mk.18 Mod 0. Assault Rifle (Leads you to Storyline 3)");
-    Console.WriteLine("[4] Mk.8 Mod 5. Auto Pistol (Leads you to Storyline 4)");
-    Console.WriteLine("[5] Nothing (Leads you to Storyline 5)");
+    Console.WriteLine("[2] Mk.8 Mod 5. Auto Pistol (Leads you to Storyline 2)");
+    Console.WriteLine("[3] Nothing (Leads you to Storyline 3)");
     int choiceStory = int.Parse(Console.ReadLine());
     if (choiceStory == 1)
     {
@@ -405,16 +401,6 @@ while (choice == true)
     else if (choiceStory == 3)
     {
         choiceStoryThree = true;
-        choice = false;
-    }
-    else if (choiceStory == 4)
-    {
-        choiceStoryFour = true;
-        choice = false;
-    }
-    else if (choiceStory == 5)
-    {
-        choiceStoryFive = true;
         choice = false;
     }
 }
@@ -678,6 +664,18 @@ if (choiceStoryOne == true) // Storyline 1 - Abandoned House
                           "levitating above a table before letting out that ear-piercing screech once more. You and Morrison " +
                           "hold your heads before being pulled into a vortex again.");
 
+        pauseDialouge = true;
+        while (pauseDialouge == true)
+        {
+            Console.WriteLine("");
+            Console.WriteLine("Press Enter to Continue...");
+            string contDialouge = Console.ReadLine();
+            if (contDialouge == "")
+            {
+                pauseDialouge = false;
+            }
+        }
+
         worsleyMissing = true;
     }
     // Storyline 1 - Abandoned House Choices 2B from Choice 1B Outcomes
@@ -727,6 +725,18 @@ if (choiceStoryOne == true) // Storyline 1 - Abandoned House
                           "shed and investigate. As you enter, you find the specimen levitating above a table before letting out " +
                           "that ear-piercing screech once more. You and Worsley hold your heads before being pulled into a vortex " +
                           "again.");
+
+        pauseDialouge = true;
+        while (pauseDialouge == true)
+        {
+            Console.WriteLine("");
+            Console.WriteLine("Press Enter to Continue...");
+            string contDialouge = Console.ReadLine();
+            if (contDialouge == "")
+            {
+                pauseDialouge = false;
+            }
+        }
 
         morrisonMissing = true;
     }
@@ -797,19 +807,23 @@ if (choiceStoryOne == true) // Storyline 1 - Abandoned House
                           "levitating again, letting out that horrible screeching noise. You clutch your head in pain before " +
                           "feeling yourself once again being pulled into a vortex.");
 
+        pauseDialouge = true;
+        while (pauseDialouge == true)
+        {
+            Console.WriteLine("");
+            Console.WriteLine("Press Enter to Continue...");
+            string contDialouge = Console.ReadLine();
+            if (contDialouge == "")
+            {
+                pauseDialouge = false;
+            }
+        }
+
         worsleyMissing = true;
         morrisonMissing = true;
     }
 }
-else if (choiceStoryTwo == true) // Storyline 2 - Mutant City
-{
-
-}
-else if (choiceStoryThree == true) // Storyline 3 - Infested Spaceship
-{
-
-}
-else if (choiceStoryFour == true) // Storyline 4 - The Wasteland
+else if (choiceStoryTwo == true) // Storyline 2 - The Wasteland
 {
     Console.WriteLine("");
     Console.WriteLine("You suddenly find yourself inside some sort of buggy-like vehicle chasing after another buggy-like " +
@@ -1504,7 +1518,7 @@ else if (choiceStoryFour == true) // Storyline 4 - The Wasteland
         }
     }
 }
-else if (choiceStoryFive == true) // Storyline 5 - Bent Reality
+else if (choiceStoryThree == true) // Storyline 3 - Bent Reality
 {
     Console.WriteLine("");
     Console.WriteLine("You are being sucked through the wormhole. Colors twist, your stomach flips, and somewhere you " +
@@ -1958,18 +1972,6 @@ else if (choiceStoryFive == true) // Storyline 5 - Bent Reality
             }
         }
 
-        pauseDialouge = true;
-        while (pauseDialouge == true)
-        {
-            Console.WriteLine("");
-            Console.WriteLine("Press Enter to Continue...");
-            string contDialouge = Console.ReadLine();
-            if (contDialouge == "")
-            {
-                pauseDialouge = false;
-            }
-        }
-
         Console.WriteLine("He hands you a Reality Toaster — apparently the key to controlling this world.");
 
         pauseDialouge = true;
@@ -2322,7 +2324,6 @@ else if (choiceStoryFive == true) // Storyline 5 - Bent Reality
     // This Ending depends on if Worsley & Morrison is present
     else
     {
-        Console.WriteLine("");
         Console.WriteLine("As you return back to the facility, you look around disoriented. Morrison grabs you by the shoulder.");
 
         pauseDialouge = true;
